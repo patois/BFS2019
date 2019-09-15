@@ -1,0 +1,1149 @@
+Gadgets information
+============================================================
+0x00000001400030e3 : adc al, 0 ; add byte ptr [rbp - 0x74f78b40], al ; retf // 14000085c074088bcb
+0x0000000140002efa : adc al, 0x48 ; add esp, 0x28 ; ret // 144883c428c3
+0x000000014000852c : adc al, ch ; ret 0xffff // 10e83ec2ffff
+0x00000001400047f3 : adc al, ch ; retf // 10e8cb
+0x0000000140006082 : adc byte ptr [rax - 0x75], cl ; retf // 10488bcb
+0x00000001400017ed : adc byte ptr [rax - 0x7d], cl ; rol dword ptr [rax + 0x48], 0xf ; ret // 104883c140480fc3
+0x0000000140006151 : adc byte ptr [rax], al ; add byte ptr [rax + 0x3b], cl ; ret 0xf48 // 100000483bc2480f
+0x000000014000200b : adc byte ptr [rax], al ; add rsp, 0x20 ; pop rbx ; ret // 10004883c4205bc3
+0x0000000140003379 : adc byte ptr [rbx - 0xe8de908], al ; xor eax, eax ; ret // 1083f81672f133c0c3
+0x000000014000769c : adc byte ptr [rcx - 0x75], cl ; jae 0x1400076c2 ; mov rsp, r11 ; pop rdi ; ret // 10498b7318498be35fc3
+0x0000000140007d4f : adc byte ptr [rcx], al ; add byte ptr [rax], al ; call 0x140004776 // 10010000e818caffff
+0x000000014000647c : adc byte ptr [rsi + 0x45], ah ; mov dword ptr [rcx], edx ; call 0x140002ec7 // 1066458911e83acaffff
+0x000000014000163c : adc byte ptr [rsi - 9], ah ; sar edi, 0xff ; jne 0x14000164f ; ret // 1066f7c1ffff7502f3c3
+0x00000001400017e3 : adc dword ptr [rax + 0xf], ecx ; ret // 11480fc3
+0x0000000140005805 : adc dword ptr [rax - 0x75], ecx ; retf 0x2ee8 // 11488bcae82e
+0x0000000140001792 : adc dword ptr [rax - 1], ecx ; ror dword ptr [rcx - 1], 0xc8 ; jne 0x14000179a ; ret // 1148ffc149ffc875f6c3
+0x0000000140002e9b : adc dword ptr [rdi + 6], esi ; mov eax, 0xd ; ret // 117706b80d000000c3
+0x00000001400089d4 : adc eax, 0x817 ; add rsp, 0x28 ; ret // 15170800004883c428c3
+0x0000000140001485 : adc eax, 0xd096 ; mov qword ptr [rdx + rcx*8], rax ; jmp 0x14000145e // 1596d00000488904caebc6
+0x000000014000642a : adc eax, ebp ; nop ; retf 0xffff // 11e890caffff
+0x0000000140005463 : adc ecx, dword ptr [rax + 0x63] ; retf 0x448a // 134863ca8a44
+0x00000001400030a2 : adc ecx, dword ptr [rax - 0x75] ; or ecx, dword ptr [rax - 0x7b] ; leave ; je 0x1400030b6 ; call rcx // 13488b0b4885c97402ffd1
+0x00000001400064fe : adc ecx, dword ptr [rcx - 0x7d] ; ret 0x6602 // 134983c20266
+0x0000000140003581 : adc edi, edi ; ret 0xff49 // 11ffc249ff
+0x000000014000852b : adc r8b, bpl ; ret 0xffff // 4910e83ec2ffff
+0x000000014000646d : add ah, byte ptr [rsi - 0x7b] ; sal byte ptr [rbp + rax + 0x48], 0xff ; retf 0xe975 // 026685c0740548ffca75e9
+0x0000000140002f80 : add ah, cl ; xor eax, eax ; add rsp, 0x28 ; ret // 00cc33c04883c428c3
+0x00000001400083e1 : add al, 0 ; add byte ptr [rax + 0x3b], cl ; ret // 040000483bc3
+0x00000001400037dd : add al, 0x41 ; call rax // 0441ffd0
+0x0000000140002ed6 : add al, 0x48 ; add eax, 0x10 ; add rsp, 0x28 ; ret // 044883c0104883c428c3
+0x0000000140002ef6 : add al, 0x48 ; add eax, 0x14 ; add rsp, 0x28 ; ret // 044883c0144883c428c3
+0x0000000140008a90 : add al, 0x84 ; div byte ptr [rbp - 0x75] ; xor eax, eax ; ret // 0484f6758b33c0c3
+0x0000000140008c3c : add al, 0x84 ; div byte ptr [rbp - 0x78] ; xor rax, rax ; ret // 0484f675884833c0c3
+0x00000001400051e8 : add al, 0x8b ; ret // 048bc3
+0x0000000140002fd2 : add al, 0x8b ; retf // 048bcb
+0x000000014000148c : add al, 0xca ; jmp 0x140001457 // 04caebc6
+0x0000000140001d13 : add al, byte ptr [rax] ; add bl, ch ; add eax, 0x4c0fc33b ; ret // 020000eb053bc30f4cc3
+0x0000000140008ddb : add al, byte ptr [rax] ; add byte ptr [rax + 0x20c48348], dl ; pop rbp ; ret // 020000904883c4205dc3
+0x0000000140007cfe : add al, ch ; insb byte ptr [rdi], dx ; retf 0xffff // 00e86ccaffff
+0x0000000140007cda : add al, ch ; nop ; retf 0xffff // 00e890caffff
+0x00000001400042e2 : add al, ch ; or byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; retf // 00e840080000488bcb
+0x0000000140007d16 : add al, ch ; push rsp ; retf 0xffff // 00e854caffff
+0x0000000140007cce : add al, ch ; pushfq ; retf 0xffff // 00e89ccaffff
+0x00000001400055bf : add al, dh ; inc dword ptr [rax + 0x160] ; ret // 00f0ff8060010000c3
+0x0000000140004839 : add bh, bh ; ret // 00ffc3
+0x0000000140005fcb : add bh, bh ; ret 0x5489 // 00ffc28954
+0x0000000140005472 : add bh, bh ; ret 0xe1eb // 00ffc2ebe1
+0x0000000140005451 : add bh, bh ; ret 0xe2eb // 00ffc2ebe2
+0x0000000140004f3e : add bh, bh ; ret 0xff48 // 00ffc248ff
+0x0000000140003070 : add bh, bh ; ror byte ptr [rax - 0x7d], 1 ; ret // 02ffd04883c3
+0x00000001400030aa : add bh, bh ; ror dword ptr [rax - 0x7d], 1 ; ret // 02ffd14883c3
+0x0000000140006056 : add bl, al ; mov qword ptr [rip + 0x8479], rcx ; ret // 00c348890d79840000c3
+0x0000000140001d15 : add bl, ch ; add eax, 0x4c0fc33b ; ret // 00eb053bc30f4cc3
+0x00000001400039e3 : add bl, ch ; add ecx, dword ptr [rax - 1] ; retf // 00eb0348ffcb
+0x00000001400065e4 : add bl, ch ; ret 0xc033 // 00ebc233c0
+0x0000000140003ab9 : add byte ptr [r8 - 1], r9b ; ret // 450048ffc3
+0x00000001400089b3 : add byte ptr [r8], al ; add rsp, 0x48 ; ret // 4b00004883c448c3
+0x0000000140003ab5 : add byte ptr [r9 - 1], r8b ; add byte ptr [r8 - 1], r9b ; ret // 450041ff450048ffc3
+0x0000000140008ddd : add byte ptr [rax + 0x20c48348], dl ; pop rbp ; ret // 00904883c4205dc3
+0x00000001400083e3 : add byte ptr [rax + 0x3b], cl ; ret // 00483bc3
+0x0000000140006153 : add byte ptr [rax + 0x3b], cl ; ret 0xf48 // 00483bc2480f
+0x0000000140001ea2 : add byte ptr [rax + 0x3b], cl ; retf 0x3572 // 00483bca7235
+0x00000001400017df : add byte ptr [rax + 0xf], cl ; ret // 00480fc3
+0x0000000140002845 : add byte ptr [rax - 0x73], cl ; push rbp ; or byte ptr [rax - 0x75], 0xcb ; call rax // 00488d5580488bcbffd0
+0x0000000140001bbc : add byte ptr [rax - 0x75], cl ; int 0xff // 00488bcdff15c2e300
+0x0000000140004195 : add byte ptr [rax - 0x75], cl ; ret // 00488bc3
+0x000000014000886f : add byte ptr [rax - 0x75], cl ; ret 0xe283 // 00488bc283e2
+0x00000001400022a9 : add byte ptr [rax - 0x75], cl ; retf // 00488bcb
+0x0000000140003667 : add byte ptr [rax - 0x75], cl ; retf 0x3939 // 00488bca3939
+0x0000000140005eca : add byte ptr [rax - 0x75], cl ; retf 0x634c // 00488bca4c63
+0x0000000140001489 : add byte ptr [rax - 0x77], cl ; add al, 0xca ; jmp 0x14000145a // 00488904caebc6
+0x0000000140005bb6 : add byte ptr [rax - 0x77], cl ; add ecx, dword ptr [rax - 0x7d] ; ret // 004889034883c3
+0x0000000140005e00 : add byte ptr [rax - 0x77], cl ; or eax, 0x86b8 ; ret // 0048890db8860000c3
+0x0000000140005db7 : add byte ptr [rax - 0x7b], cl ; leave ; je 0x140005dc7 ; call rcx // 004885c97404ffd1
+0x00000001400063be : add byte ptr [rax - 0x7b], cl ; sal byte ptr [rax + rcx + 0x48], 0x8b ; retf // 004885c07408488bcb
+0x000000014000607d : add byte ptr [rax - 0x7b], cl ; sal byte ptr [rax + rdx + 0x48], 0x8b ; retf // 004885c07410488bcb
+0x0000000140002fcd : add byte ptr [rax - 0x7b], cl ; sal byte ptr [rsp + rax - 0x75], 0xcb ; call rax // 004885c074048bcbffd0
+0x0000000140005fc5 : add byte ptr [rax - 0x7d], cl ; enter 8, -1 ; ret 0x5489 // 00488364c80800ffc28954
+0x0000000140004ae4 : add byte ptr [rax - 0x7d], cl ; ret // 004883c3
+0x0000000140003d7e : add byte ptr [rax - 0x7d], cl ; ret 0x4858 // 004883c25848
+0x00000001400036ec : add byte ptr [rax - 0x7d], cl ; ret 0x4c10 // 004883c2104c
+0x0000000140008278 : add byte ptr [rax - 0x7d], cl ; retf // 004883cb
+0x0000000140003aba : add byte ptr [rax - 1], cl ; ret // 0048ffc3
+0x0000000140002790 : add byte ptr [rax - 1], cl ; retf // 0048ffcb
+0x0000000140007cfc : add byte ptr [rax], al ; add al, ch ; insb byte ptr [rdi], dx ; retf 0xffff // 000000e86ccaffff
+0x0000000140007cd8 : add byte ptr [rax], al ; add al, ch ; nop ; retf 0xffff // 000000e890caffff
+0x0000000140007d14 : add byte ptr [rax], al ; add al, ch ; push rsp ; retf 0xffff // 000000e854caffff
+0x0000000140007ccc : add byte ptr [rax], al ; add al, ch ; pushfq ; retf 0xffff // 000000e89ccaffff
+0x0000000140004f3c : add byte ptr [rax], al ; add bh, bh ; ret 0xff48 // 000000ffc248ff
+0x00000001400065e2 : add byte ptr [rax], al ; add bl, ch ; ret 0xc033 // 000000ebc233c0
+0x0000000140001bba : add byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; int 0xff // 000000488bcdff15c2e300
+0x00000001400022a7 : add byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; retf // 000000488bcb
+0x0000000140003665 : add byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; retf 0x3939 // 000000488bca3939
+0x0000000140005ec8 : add byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; retf 0x634c // 000000488bca4c63
+0x0000000140005db5 : add byte ptr [rax], al ; add byte ptr [rax - 0x7b], cl ; leave ; je 0x140005dc9 ; call rcx // 0000004885c97404ffd1
+0x00000001400036ea : add byte ptr [rax], al ; add byte ptr [rax - 0x7d], cl ; ret 0x4c10 // 0000004883c2104c
+0x0000000140006c4d : add byte ptr [rax], al ; add byte ptr [rax - 1], cl ; ret // 00000048ffc3
+0x000000014000278e : add byte ptr [rax], al ; add byte ptr [rax - 1], cl ; retf // 00000048ffcb
+0x000000014000450c : add byte ptr [rax], al ; add byte ptr [rax], al ; ret // 00000000c3
+0x0000000140001369 : add byte ptr [rax], al ; add byte ptr [rbx], al ; ret 0xff25 // 00000003c225ff
+0x0000000140001370 : add byte ptr [rax], al ; add byte ptr [rbx], ch ; ret 0x9848 // 0000002bc24898
+0x000000014000248b : add byte ptr [rax], al ; add byte ptr [rbx], ch ; ret 0xf8d1 // 0000002bc2d1f8
+0x00000001400037c4 : add byte ptr [rax], al ; add byte ptr [rcx + 8], bh ; call r8 // 000000b90800000041ffd0
+0x00000001400037b5 : add byte ptr [rax], al ; add byte ptr [rdi], cl ; ret 0x8389 // 0000000f44c28983
+0x000000014000186a : add byte ptr [rax], al ; add byte ptr [rdi], cl ; xchg eax, ebp ; ret // 0000000f95c3
+0x0000000140005a83 : add byte ptr [rax], al ; add ch, bh ; add rsp, 0x40 ; pop rbx ; ret // 000000fd4883c4405bc3
+0x0000000140001098 : add byte ptr [rax], al ; add rsp, 0x1e8 ; ret // 00004881c4e8010000c3
+0x000000014000160a : add byte ptr [rax], al ; add rsp, 0x28 ; ret // 00004883c428c3
+0x00000001400013f7 : add byte ptr [rax], al ; add rsp, 0x298 ; ret // 00004881c498020000c3
+0x00000001400089b4 : add byte ptr [rax], al ; add rsp, 0x48 ; ret // 00004883c448c3
+0x00000001400044ca : add byte ptr [rax], al ; add rsp, 0x4d8 ; ret // 00004881c4d8040000c3
+0x0000000140001162 : add byte ptr [rax], al ; add rsp, 0x58 ; ret // 00004883c458c3
+0x0000000140005c96 : add byte ptr [rax], al ; add rsp, 0x60 ; pop rdi ; pop rsi ; pop rbp ; ret // 00004883c4605f5e5dc3
+0x0000000140001589 : add byte ptr [rax], al ; add rsp, 0x78 ; ret // 00004883c478c3
+0x0000000140001ae8 : add byte ptr [rax], al ; add rsp, 0x88 ; ret // 00004881c488000000c3
+0x0000000140007c79 : add byte ptr [rax], al ; call 0x140004774 // 0000e8f0caffff
+0x000000014000891e : add byte ptr [rax], al ; call 0x140004b2c // 0000e803c2ffff
+0x00000001400037ca : add byte ptr [rax], al ; call r8 // 000041ffd0
+0x0000000140002ead : add byte ptr [rax], al ; cmp ecx, 0xe ; cmovbe eax, r8d ; ret // 000083f90e410f46c0c3
+0x0000000140004526 : add byte ptr [rax], al ; cmp word ptr [rax], cx ; je 0x140004539 ; xor eax, eax ; ret // 0000663908740333c0c3
+0x0000000140005450 : add byte ptr [rax], al ; inc edx ; jmp 0x14000543b // 0000ffc2ebe2
+0x0000000140005471 : add byte ptr [rax], al ; inc edx ; jmp 0x14000545b // 0000ffc2ebe1
+0x000000014000436c : add byte ptr [rax], al ; jmp 0x14000437c // 0000eb07e8cb
+0x0000000140002844 : add byte ptr [rax], al ; lea rdx, [rbp - 0x80] ; mov rcx, rbx ; call rax // 0000488d5580488bcbffd0
+0x00000001400055be : add byte ptr [rax], al ; lock inc dword ptr [rax + 0x160] ; ret // 0000f0ff8060010000c3
+0x0000000140006433 : add byte ptr [rax], al ; mov dword ptr [rax], ebx ; call 0x140002e5e // 00008918e81ccaffff
+0x00000001400037c5 : add byte ptr [rax], al ; mov ecx, 8 ; call r8 // 0000b90800000041ffd0
+0x000000014000323a : add byte ptr [rax], al ; mov qword ptr [rdi], rax ; call rbx // 0000488907ffd3
+0x0000000140001488 : add byte ptr [rax], al ; mov qword ptr [rdx + rcx*8], rax ; jmp 0x14000145b // 0000488904caebc6
+0x0000000140005dff : add byte ptr [rax], al ; mov qword ptr [rip + 0x86b8], rcx ; ret // 000048890db8860000c3
+0x0000000140005666 : add byte ptr [rax], al ; mov rax, rcx ; ret // 0000488bc1c3
+0x0000000140008ddc : add byte ptr [rax], al ; nop ; add rsp, 0x20 ; pop rbp ; ret // 0000904883c4205dc3
+0x000000014000109f : add byte ptr [rax], al ; ret // 0000c3
+0x000000014000170e : add byte ptr [rax], al ; sete al ; ret // 00000f94c0c3
+0x0000000140005a84 : add byte ptr [rax], al ; std ; add rsp, 0x40 ; pop rbx ; ret // 0000fd4883c4405bc3
+0x0000000140002fcc : add byte ptr [rax], al ; test rax, rax ; je 0x140002fe0 ; mov ecx, ebx ; call rax // 00004885c074048bcbffd0
+0x000000014000639c : add byte ptr [rax], al ; test rax, rax ; je 0x1400063d3 ; call rax // 00004885c07429ffd0
+0x0000000140005db6 : add byte ptr [rax], al ; test rcx, rcx ; je 0x140005dc8 ; call rcx // 00004885c97404ffd1
+0x0000000140002f9b : add byte ptr [rax], al ; xor eax, eax ; add rsp, 0x28 ; ret // 000033c04883c428c3
+0x000000014000434d : add byte ptr [rbp + 0x331e74c0], al ; ror byte ptr [rax - 0x75], cl ; retf // 0085c0741e33d2488bcb
+0x00000001400080a5 : add byte ptr [rbp + rax - 0x18], dh ; ret // 007405e8c3
+0x0000000140008432 : add byte ptr [rbp - 0x74f38b25], al ; retf // 0085db740c8bcbe8c2aaff
+0x00000001400030e5 : add byte ptr [rbp - 0x74f78b40], al ; retf // 0085c074088bcb
+0x0000000140004a66 : add byte ptr [rbp - 0xd98b40], al ; ret // 0085c07426ffc3
+0x00000001400016f1 : add byte ptr [rbx - 0x3b7cb739], cl ; sub byte ptr [rdi + 0x5b], bl ; ret // 008bc74883c4285f5bc3
+0x0000000140005fb2 : add byte ptr [rbx], al ; enter -0x2ec5, 0x7d ; sub cl, byte ptr [rax + 0x63] ; retf 0x348 // 0003c83bd17d2a4863ca4803
+0x000000014000136b : add byte ptr [rbx], al ; ret 0xff25 // 0003c225ff
+0x0000000140002771 : add byte ptr [rbx], ch ; ret // 002bc3
+0x0000000140001372 : add byte ptr [rbx], ch ; ret 0x9848 // 002bc24898
+0x000000014000248d : add byte ptr [rbx], ch ; ret 0xf8d1 // 002bc2d1f8
+0x00000001400037c6 : add byte ptr [rcx + 8], bh ; call r8 // 00b90800000041ffd0
+0x0000000140004834 : add byte ptr [rcx - 0x7d], cl ; and al, 0xf3 ; add bh, bh ; ret // 00498324f300ffc3
+0x0000000140003ab6 : add byte ptr [rcx - 1], al ; add byte ptr [r8 - 1], r9b ; ret // 0041ff450048ffc3
+0x0000000140003bd8 : add byte ptr [rcx - 1], al ; retf // 0041ffcb
+0x0000000140004f3a : add byte ptr [rcx], al ; add byte ptr [rax], al ; add bh, bh ; ret 0xff48 // 0001000000ffc248ff
+0x0000000140007d37 : add byte ptr [rcx], al ; add byte ptr [rax], al ; call 0x140004776 // 00010000e830caffff
+0x00000001400037b7 : add byte ptr [rdi], cl ; ret 0x8389 // 000f44c28983
+0x000000014000186c : add byte ptr [rdi], cl ; xchg eax, ebp ; ret // 000f95c3
+0x0000000140005a85 : add ch, bh ; add rsp, 0x40 ; pop rbx ; ret // 00fd4883c4405bc3
+0x00000001400050b2 : add ch, bh ; mov eax, ebx ; add rsp, 0x40 ; pop rbx ; ret // 00fd8bc34883c4405bc3
+0x0000000140007555 : add ch, bl ; fld qword ptr [rax] ; add byte ptr [rax - 0x7d], cl ; ret // 00dddd00004883c3
+0x0000000140006fdf : add cl, byte ptr [rax - 0x7d] ; ret 0x4802 // 024883c20248
+0x0000000140006fe3 : add cl, byte ptr [rax - 0x7d] ; ret 0x6602 // 024883c20266
+0x0000000140004f01 : add cl, byte ptr [rax - 1] ; retf // 0248ffcb
+0x000000014000644d : add cl, byte ptr [rax - 1] ; retf 0xf175 // 0248ffca75f1
+0x0000000140001643 : add dh, bl ; ret // 02f3c3
+0x0000000140005662 : add dword ptr [rax + 0x160], ecx ; mov rax, rcx ; ret // 018860010000488bc1c3
+0x000000014000546e : add dword ptr [rax - 0x34], esp ; add byte ptr [rax], al ; inc edx ; jmp 0x14000545e // 0160cc0000ffc2ebe1
+0x00000001400020ab : add dword ptr [rax - 0x75], ecx ; ret // 01488bc3
+0x0000000140001d6c : add dword ptr [rax - 0x7d], ecx ; ret 0x4830 // 014883c23048
+0x0000000140004d11 : add dword ptr [rax], eax ; add byte ptr [rax - 0x75], cl ; retf // 010000488bcb
+0x0000000140006c02 : add dword ptr [rax], eax ; add byte ptr [rax - 1], cl ; ret // 01000048ffc3
+0x0000000140001608 : add dword ptr [rax], eax ; add byte ptr [rax], al ; add rsp, 0x28 ; ret // 010000004883c428c3
+0x000000014000436a : add dword ptr [rax], eax ; add byte ptr [rax], al ; jmp 0x14000437e // 01000000eb07e8cb
+0x000000014000276f : add dword ptr [rax], eax ; add byte ptr [rbx], ch ; ret // 0100002bc3
+0x0000000140007aca : add dword ptr [rbp - 0xd], esi ; mov rax, r11 ; ret // 0175f3498bc3c3
+0x00000001400084c3 : add dword ptr [rbx + rcx - 0x75], esi ; retf // 01740b8bcb
+0x00000001400084b0 : add dword ptr [rdi + rsi - 0x75], esi ; retf // 0174378bcb
+0x0000000140002ed8 : add eax, 0x10 ; add rsp, 0x28 ; ret // 83c0104883c428c3
+0x0000000140002ef8 : add eax, 0x14 ; add rsp, 0x28 ; ret // 83c0144883c428c3
+0x0000000140008c6d : add eax, 0x25ff0000 ; ret 5 // 050000ff25c20500
+0x0000000140008c85 : add eax, 0x25ff0000 ; retf 5 // 050000ff25ca0500
+0x00000001400089b1 : add eax, 0x4b12 ; add rsp, 0x48 ; ret // 05124b00004883c448c3
+0x0000000140001d17 : add eax, 0x4c0fc33b ; ret // 053bc30f4cc3
+0x00000001400059d2 : add eax, 0x58c96b48 ; add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059ec // 05486bc95848030cc2eb07
+0x000000014000543e : add eax, 0x6348157d ; retf 0xb70f // 057d154863ca0fb7
+0x0000000140005ddf : add eax, 0x86bc ; add rsp, 0x28 ; ret // 05bc8600004883c428c3
+0x0000000140001cf6 : add eax, 0xa565 ; ret // 0565a50000c3
+0x000000014000582c : add eax, 0xfffe3ae8 ; dec dword ptr [rax - 0x75] ; ret // 05e83afeffff488bc3
+0x00000001400023a5 : add eax, dword ptr [rcx - 0x75] ; retf 0x6348 // 03418bca4863
+0x0000000140003385 : add eax, eax ; mov rax, qword ptr [r8 + rax*8 + 8] ; ret // 03c0498b44c008c3
+0x0000000140001cbf : add eax, edi ; call r8 // 03c741ffd0
+0x0000000140001b87 : add eax, edi ; call rax // 03c7ffd0
+0x0000000140005b95 : add eax, edi ; ret // 01f8c3
+0x0000000140005b94 : add eax, r15d ; ret // 4401f8c3
+0x0000000140005b77 : add ebp, edi ; ret // 01fdc3
+0x0000000140005b76 : add ebp, r15d ; ret // 4401fdc3
+0x0000000140005b83 : add ebx, edi ; ret // 01fbc3
+0x0000000140005b82 : add ebx, r15d ; ret // 4401fbc3
+0x0000000140001e3b : add ecx, dword ptr [rax - 0x75] ; retf 0xc148 // 03488bca48c1
+0x0000000140005bb9 : add ecx, dword ptr [rax - 0x7d] ; ret // 034883c3
+0x0000000140003a96 : add ecx, dword ptr [rax - 1] ; ret // 0348ffc3
+0x0000000140002760 : add ecx, dword ptr [rax - 1] ; retf // 0348ffcb
+0x000000014000651a : add ecx, dword ptr [rcx - 0x7d] ; ret // 034983c3
+0x00000001400059d8 : add ecx, dword ptr [rdx + rax*8] ; jmp 0x1400059e6 // 030cc2eb07
+0x0000000140005b8f : add ecx, edi ; ret // 01f9c3
+0x0000000140005b8e : add ecx, r15d ; ret // 4401f9c3
+0x0000000140004368 : add edi, dword ptr [rax + 1] ; jmp 0x140004380 // 03b801000000eb07e8cb
+0x0000000140005b6b : add edi, edi ; ret // 01ffc3
+0x0000000140005b6a : add edi, r15d ; ret // 4401ffc3
+0x0000000140005b89 : add edx, edi ; ret // 01fac3
+0x0000000140005b88 : add edx, r15d ; ret // 4401fac3
+0x0000000140005b71 : add esi, edi ; ret // 01fec3
+0x0000000140005b70 : add esi, r15d ; ret // 4401fec3
+0x000000014000878a : add esp, 0x10 ; ret // 83c410c3
+0x000000014000109b : add esp, 0x1e8 ; ret // 81c4e8010000c3
+0x000000014000733b : add esp, 0x20 ; pop r12 ; pop rdi ; pop rsi ; ret // 83c420415c5f5ec3
+0x0000000140001fd3 : add esp, 0x20 ; pop r12 ; ret // 83c420415cc3
+0x0000000140004c20 : add esp, 0x20 ; pop r13 ; ret // 83c420415dc3
+0x0000000140003af9 : add esp, 0x20 ; pop r14 ; pop r13 ; pop r12 ; ret // 83c420415e415d415cc3
+0x000000014000894f : add esp, 0x20 ; pop r14 ; ret // 83c420415ec3
+0x0000000140008cb1 : add esp, 0x20 ; pop rbp ; ret // 83c4205dc3
+0x0000000140001dd7 : add esp, 0x20 ; pop rbx ; ret // 83c4205bc3
+0x000000014000214c : add esp, 0x20 ; pop rdi ; ret // 83c4205fc3
+0x00000001400016f5 : add esp, 0x28 ; pop rdi ; pop rbx ; ret // 83c4285f5bc3
+0x00000001400011d6 : add esp, 0x28 ; ret // 83c428c3
+0x00000001400013fa : add esp, 0x298 ; ret // 81c498020000c3
+0x000000014000550c : add esp, 0x30 ; pop r13 ; ret // 83c430415dc3
+0x0000000140004a06 : add esp, 0x30 ; pop r15 ; pop r13 ; pop r12 ; ret // 83c430415f415d415cc3
+0x000000014000198e : add esp, 0x30 ; pop rdi ; ret // 83c4305fc3
+0x0000000140002e72 : add esp, 0x38 ; ret // 83c438c3
+0x0000000140003cea : add esp, 0x40 ; pop r12 ; ret // 83c440415cc3
+0x00000001400050b7 : add esp, 0x40 ; pop rbx ; ret // 83c4405bc3
+0x0000000140006706 : add esp, 0x40 ; pop rdi ; ret // 83c4405fc3
+0x00000001400089b7 : add esp, 0x48 ; ret // 83c448c3
+0x00000001400044cd : add esp, 0x4d8 ; ret // 81c4d8040000c3
+0x00000001400085fe : add esp, 0x50 ; pop rbp ; ret // 83c4505dc3
+0x0000000140001165 : add esp, 0x58 ; ret // 83c458c3
+0x0000000140005c99 : add esp, 0x60 ; pop rdi ; pop rsi ; pop rbp ; ret // 83c4605f5e5dc3
+0x0000000140007881 : add esp, 0x60 ; pop rdi ; ret // 83c4605fc3
+0x000000014000158c : add esp, 0x78 ; ret // 83c478c3
+0x0000000140001aeb : add esp, 0x88 ; ret // 81c488000000c3
+0x0000000140005b7d : add esp, edi ; ret // 01fcc3
+0x0000000140005b7c : add esp, r15d ; ret // 4401fcc3
+0x0000000140001cbe : add r8, r15 ; call r8 // 4d03c741ffd0
+0x0000000140002ed7 : add rax, 0x10 ; add rsp, 0x28 ; ret // 4883c0104883c428c3
+0x0000000140002ef7 : add rax, 0x14 ; add rsp, 0x28 ; ret // 4883c0144883c428c3
+0x0000000140001b86 : add rax, r15 ; call rax // 4903c7ffd0
+0x0000000140003384 : add rax, rax ; mov rax, qword ptr [r8 + rax*8 + 8] ; ret // 4803c0498b44c008c3
+0x00000001400059d7 : add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059e7 // 48030cc2eb07
+0x0000000140008789 : add rsp, 0x10 ; ret // 4883c410c3
+0x000000014000109a : add rsp, 0x1e8 ; ret // 4881c4e8010000c3
+0x000000014000733a : add rsp, 0x20 ; pop r12 ; pop rdi ; pop rsi ; ret // 4883c420415c5f5ec3
+0x0000000140001fd2 : add rsp, 0x20 ; pop r12 ; ret // 4883c420415cc3
+0x0000000140004c1f : add rsp, 0x20 ; pop r13 ; ret // 4883c420415dc3
+0x000000014000894e : add rsp, 0x20 ; pop r14 ; ret // 4883c420415ec3
+0x0000000140008cb0 : add rsp, 0x20 ; pop rbp ; ret // 4883c4205dc3
+0x0000000140001dd6 : add rsp, 0x20 ; pop rbx ; ret // 4883c4205bc3
+0x000000014000214b : add rsp, 0x20 ; pop rdi ; ret // 4883c4205fc3
+0x00000001400016f4 : add rsp, 0x28 ; pop rdi ; pop rbx ; ret // 4883c4285f5bc3
+0x00000001400011d5 : add rsp, 0x28 ; ret // 4883c428c3
+0x00000001400013f9 : add rsp, 0x298 ; ret // 4881c498020000c3
+0x000000014000550b : add rsp, 0x30 ; pop r13 ; ret // 4883c430415dc3
+0x000000014000198d : add rsp, 0x30 ; pop rdi ; ret // 4883c4305fc3
+0x0000000140002e71 : add rsp, 0x38 ; ret // 4883c438c3
+0x0000000140003ce9 : add rsp, 0x40 ; pop r12 ; ret // 4883c440415cc3
+0x00000001400050b6 : add rsp, 0x40 ; pop rbx ; ret // 4883c4405bc3
+0x0000000140006705 : add rsp, 0x40 ; pop rdi ; ret // 4883c4405fc3
+0x00000001400089b6 : add rsp, 0x48 ; ret // 4883c448c3
+0x00000001400044cc : add rsp, 0x4d8 ; ret // 4881c4d8040000c3
+0x00000001400085fd : add rsp, 0x50 ; pop rbp ; ret // 4883c4505dc3
+0x0000000140001164 : add rsp, 0x58 ; ret // 4883c458c3
+0x0000000140005c98 : add rsp, 0x60 ; pop rdi ; pop rsi ; pop rbp ; ret // 4883c4605f5e5dc3
+0x0000000140007880 : add rsp, 0x60 ; pop rdi ; ret // 4883c4605fc3
+0x000000014000158b : add rsp, 0x78 ; ret // 4883c478c3
+0x0000000140001aea : add rsp, 0x88 ; ret // 4881c488000000c3
+0x00000001400011d3 : and al, 0x10 ; add rsp, 0x28 ; ret // 24104883c428c3
+0x0000000140002825 : and al, 0x20 ; call rax // 2420ffd0
+0x0000000140004659 : and al, 0x30 ; add rsp, 0x20 ; pop r12 ; ret // 24304883c420415cc3
+0x000000014000307f : and al, 0x30 ; add rsp, 0x20 ; pop rdi ; ret // 24304883c4205fc3
+0x0000000140001b81 : and al, 0x30 ; mov rdx, r13 ; add rax, r15 ; call rax // 2430498bd54903c7ffd0
+0x0000000140001fd0 : and al, 0x38 ; add rsp, 0x20 ; pop r12 ; ret // 24384883c420415cc3
+0x00000001400042f3 : and al, 0x38 ; add rsp, 0x20 ; pop rdi ; ret // 24384883c4205fc3
+0x0000000140004a88 : and al, 0x40 ; add rsp, 0x20 ; pop r12 ; ret // 24404883c420415cc3
+0x0000000140004c1d : and al, 0x40 ; add rsp, 0x20 ; pop r13 ; ret // 24404883c420415dc3
+0x0000000140002149 : and al, 0x40 ; add rsp, 0x20 ; pop rdi ; ret // 24404883c4205fc3
+0x000000014000859e : and al, 0x40 ; add rsp, 0x38 ; ret // 24404883c438c3
+0x00000001400021f2 : and al, 0x48 ; add rsp, 0x20 ; pop r12 ; ret // 24484883c420415cc3
+0x000000014000894c : and al, 0x48 ; add rsp, 0x20 ; pop r14 ; ret // 24484883c420415ec3
+0x0000000140005a3d : and al, 0x48 ; add rsp, 0x20 ; pop rdi ; ret // 24484883c4205fc3
+0x000000014000198b : and al, 0x48 ; add rsp, 0x30 ; pop rdi ; ret // 24484883c4305fc3
+0x0000000140002e3f : and al, 0x50 ; add rsp, 0x30 ; pop rdi ; ret // 24504883c4305fc3
+0x0000000140005509 : and al, 0x58 ; add rsp, 0x30 ; pop r13 ; ret // 24584883c430415dc3
+0x0000000140003bf2 : and al, 0x58 ; add rsp, 0x30 ; pop rdi ; ret // 24584883c4305fc3
+0x0000000140006703 : and al, 0x58 ; add rsp, 0x40 ; pop rdi ; ret // 24584883c4405fc3
+0x0000000140002e29 : and al, 0x60 ; mov qword ptr [rsp + 0x20], r10 ; call rax // 24604c89542420ffd0
+0x0000000140003ce7 : and al, 0x68 ; add rsp, 0x40 ; pop r12 ; ret // 24684883c440415cc3
+0x00000001400085fb : and al, 0x78 ; add rsp, 0x50 ; pop rbp ; ret // 24784883c4505dc3
+0x000000014000787e : and al, 0x78 ; add rsp, 0x60 ; pop rdi ; ret // 24784883c4605fc3
+0x0000000140001d3b : and al, 0x8d ; push rax ; or byte ptr [rax - 0x75], cl ; retf // 248d5008488bcb
+0x0000000140004837 : and al, 0xf3 ; add bh, bh ; ret // 24f300ffc3
+0x0000000140008787 : and al, 8 ; add rsp, 0x10 ; ret // 24084883c410c3
+0x000000014000767b : and al, ch ; ret // 20e8c3
+0x0000000140007c03 : and al, ch ; retf // 20e867cb
+0x00000001400073db : and bh, bh ; ret 0x15ff // 20ffc2ff15
+0x00000001400058ce : and byte ptr [rax - 0x75], cl ; retf 0x8b48 // 20488bca488b
+0x000000014000733d : and byte ptr [rcx + 0x5c], al ; pop rdi ; pop rsi ; ret // 20415c5f5ec3
+0x0000000140001fd5 : and byte ptr [rcx + 0x5c], al ; ret // 20415cc3
+0x0000000140004c22 : and byte ptr [rcx + 0x5d], al ; ret // 20415dc3
+0x0000000140007261 : and byte ptr [rcx + 0x5e], al ; pop r13 ; pop r12 ; pop rdi ; pop rsi ; ret // 20415e415d415c5f5ec3
+0x0000000140003afb : and byte ptr [rcx + 0x5e], al ; pop r13 ; pop r12 ; ret // 20415e415d415cc3
+0x0000000140008951 : and byte ptr [rcx + 0x5e], al ; ret // 20415ec3
+0x0000000140006370 : and byte ptr [rcx - 0x73], al ; push rcx ; cmc ; mov rcx, rax ; call r12 // 20418d51f5488bc841ffd4
+0x0000000140004f66 : and byte ptr [rcx - 0x75], cl ; jnp 0x140004f9c ; mov rsp, r11 ; pop rbp ; ret // 20498b7b28498be35dc3
+0x0000000140007d67 : and byte ptr [rcx], al ; add byte ptr [rax], al ; call 0x140004776 // 20010000e800caffff
+0x00000001400036e8 : and dword ptr [rax + 0x48000000], 0xffffff83 ; ret 0x4c10 // 83a00000004883c2104c
+0x0000000140002009 : and dword ptr [rbx + 0x10], 0 ; add rsp, 0x20 ; pop rbx ; ret // 836310004883c4205bc3
+0x000000014000448c : and dword ptr [rip + 0xa88d], 0 ; ret // 83258da8000000c3
+0x00000001400060d5 : and eax, dword ptr [rax] ; xor eax, eax ; add rsp, 0x20 ; pop rbx ; ret // 230033c04883c4205bc3
+0x0000000140007c02 : and r8b, bpl ; retf // 4b20e867cb
+0x000000014000109d : call 0x1030010a7 // e8010000c3
+0x0000000140004d1c : call 0x140001732 // e80fcaffff
+0x0000000140006437 : call 0x140002e5a // e81ccaffff
+0x000000014000642b : call 0x140002ec2 // e890caffff
+0x0000000140006a82 : call 0x140002ee4 // e859c4ffff21
+0x000000014000852d : call 0x140004772 // e83ec2ffff
+0x0000000140008920 : call 0x140004b2a // e803c2ffff
+0x0000000140003821 : call 0x14000551c // e8ee1c0000488b1dc3
+0x0000000140001803 : call 0x191c32758 // e8480fc351f0480fc3
+0x0000000140006e41 : call qword ptr [rbx] // ff13
+0x0000000140004b03 : call qword ptr [rip + 0x45e7] // ff15e74500004883c3
+0x000000014000412a : call qword ptr [rip + 0x4ff0] // ff15f04f00008b0dc28600
+0x0000000140006378 : call r12 // 41ffd4
+0x0000000140001cc1 : call r8 // 41ffd0
+0x0000000140003071 : call rax // ffd04883c3
+0x000000014000323f : call rbx // ffd3
+0x00000001400030ab : call rcx // ffd14883c3
+0x0000000140006355 : call rsi // ffd6
+0x0000000140006379 : call rsp // ffd4
+0x0000000140002eb7 : cdqe ; mov eax, dword ptr [r9 + rax*8 + 4] ; ret // 4898418b44c104c3
+0x0000000140002e9a : clc ; adc dword ptr [rdi + 6], esi ; mov eax, 0xd ; ret // f8117706b80d000000c3
+0x0000000140001869 : clc ; add byte ptr [rax], al ; add byte ptr [rdi], cl ; xchg eax, ebp ; ret // f80000000f95c3
+0x00000001400059d1 : clc ; add eax, 0x58c96b48 ; add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059ed // f805486bc95848030cc2eb07
+0x0000000140006578 : clc ; dec rax ; ret // f848ffc8c3
+0x0000000140008a2c : clc ; emms ; retf // f80f77cb
+0x0000000140005b96 : clc ; ret // f8c3
+0x0000000140001cbd : cld ; add r8, r15 ; call r8 // fc4d03c741ffd0
+0x0000000140005b7e : cld ; ret // fcc3
+0x0000000140007c70 : cld ; retf 0xffff // fccaffff
+0x000000014000278d : cli ; add byte ptr [rax], al ; add byte ptr [rax - 1], cl ; retf // fa00000048ffcb
+0x000000014000543d : cli ; add eax, 0x6348157d ; retf 0xb70f // fa057d154863ca0fb7
+0x0000000140001e3a : cli ; add ecx, dword ptr [rax - 0x75] ; retf 0xc148 // fa03488bca48c1
+0x0000000140008a2b : cli ; clc ; emms ; retf // faf80f77cb
+0x0000000140005b8a : cli ; ret // fac3
+0x0000000140006374 : cmc ; mov rcx, rax ; call r12 // f5488bc841ffd4
+0x0000000140002eb3 : cmovbe eax, eax ; ret // 0f46c0c3
+0x0000000140002eb2 : cmovbe eax, r8d ; ret // 410f46c0c3
+0x0000000140001eb8 : cmovs ebp, dword ptr [rbx] ; retf 0xb848 // 0f482bca48b8
+0x000000014000634f : cmp al, 0x48 ; test eax, eax ; je 0x140006392 ; call rsi // 3c4885c07437ffd6
+0x00000001400015fa : cmp byte ptr [r8 - 0x75], cl ; retf 0x8b49 // 4138488bca498b
+0x0000000140001471 : cmp byte ptr [rax - 0x47], cl ; ret // 3848b9c3
+0x00000001400015fb : cmp byte ptr [rax - 0x75], cl ; retf 0x8b49 // 38488bca498b
+0x00000001400084c1 : cmp byte ptr [rax], cl ; add dword ptr [rbx + rcx - 0x75], esi ; retf // 380801740b8bcb
+0x00000001400084c0 : cmp byte ptr [rax], r9b ; add dword ptr [rbx + rcx - 0x75], esi ; retf // 44380801740b8bcb
+0x00000001400024ec : cmp byte ptr [rcx - 0x74b80000], ah ; retf // 38a10000488bcb
+0x00000001400035e3 : cmp byte ptr [rcx - 0x75], cl ; jrcxz 0x140003632 ; pop rbp ; pop r12 ; pop rdi ; ret // 38498be3415d415c5fc3
+0x0000000140004529 : cmp dword ptr [rax], ecx ; je 0x140004536 ; xor eax, eax ; ret // 3908740333c0c3
+0x0000000140004547 : cmp dword ptr [rcx + 0x18], edx ; sete al ; ret // 3951180f94c0f3c3
+0x000000014000170a : cmp dword ptr [rip + 0xbdd8], ecx ; sete al ; ret // 390dd8bd00000f94c0c3
+0x000000014000337a : cmp eax, 0x16 ; jb 0x140003377 ; xor eax, eax ; ret // 83f81672f133c0c3
+0x0000000140008b6f : cmp eax, ecx ; sbb eax, eax ; sbb eax, -1 ; ret // 3bc11bc083d8ffc3
+0x0000000140002eaf : cmp ecx, 0xe ; cmovbe eax, r8d ; ret // 83f90e410f46c0c3
+0x000000014000458b : cmp ecx, ebx ; jb 0x140004577 ; xor eax, eax ; ret // 3bcb72e233c0c3
+0x000000014000458a : cmp r9d, r11d ; jb 0x140004578 ; xor eax, eax ; ret // 453bcb72e233c0c3
+0x0000000140008b6e : cmp rax, rcx ; sbb eax, eax ; sbb eax, -1 ; ret // 483bc11bc083d8ffc3
+0x0000000140004528 : cmp word ptr [rax], cx ; je 0x140004537 ; xor eax, eax ; ret // 663908740333c0c3
+0x0000000140004546 : cmp word ptr [rcx + 0x18], dx ; sete al ; ret // 663951180f94c0f3c3
+0x0000000140003042 : cmpsb byte ptr [rsi], byte ptr [rdi] ; sub eax, 0x8b480000 ; retf // a62d0000488bcb
+0x0000000140003383 : cwde ; add rax, rax ; mov rax, qword ptr [r8 + rax*8 + 8] ; ret // 984803c0498b44c008c3
+0x0000000140001868 : cwde ; clc ; add byte ptr [rax], al ; add byte ptr [rdi], cl ; xchg eax, ebp ; ret // 98f80000000f95c3
+0x0000000140002eb8 : cwde ; mov eax, dword ptr [r9 + rax*8 + 4] ; ret // 98418b44c104c3
+0x0000000140007bff : dec dword ptr [rax - 0x75] ; and r8b, bpl ; retf // ff488b4b20e867cb
+0x0000000140007c6a : dec dword ptr [rax - 0x75] ; js 0x140007c5f ; cld ; retf 0xffff // ff488b4b78e8fccaffff
+0x00000001400041be : dec dword ptr [rax - 0x75] ; ret // ff488bc3
+0x000000014000302d : dec dword ptr [rax - 0x75] ; retf // ff488bcb
+0x0000000140007c08 : dec dword ptr [rax - 0x75] ; sub r8b, bpl ; pop rsi ; retf // ff488b4b28e85ecb
+0x0000000140007c11 : dec dword ptr [rax - 0x75] ; xor r8b, bpl ; push rbp ; retf // ff488b4b30e855cb
+0x0000000140003f81 : dec dword ptr [rax - 0x7d] ; ret // ff4883c3
+0x00000001400061fc : dec eax ; add rsp, 0x28 ; ret // ffc84883c428c3
+0x0000000140001797 : dec eax ; jne 0x140001795 ; ret // ffc875f6c3
+0x0000000140007929 : dec eax ; jne 0x140007927 ; mov rax, r11 ; ret // ffc875f3498bc3c3
+0x0000000140008aeb : dec eax ; jne 0x140008ae7 ; xor rax, rax ; ret // ffc875f14833c0c3
+0x0000000140007ac7 : dec eax ; mov byte ptr [rcx], al ; jne 0x140007ac9 ; mov rax, r11 ; ret // ffc8880175f3498bc3c3
+0x000000014000657a : dec eax ; ret // ffc8c3
+0x0000000140001796 : dec r8 ; jne 0x140001796 ; ret // 49ffc875f6c3
+0x0000000140007928 : dec r8 ; jne 0x140007928 ; mov rax, r11 ; ret // 49ffc875f3498bc3c3
+0x0000000140008aea : dec r8 ; jne 0x140008ae8 ; xor rax, rax ; ret // 49ffc875f14833c0c3
+0x0000000140006579 : dec rax ; ret // 48ffc8c3
+0x0000000140005b65 : div byte ptr [rbp - 0x47] ; lea rax, [rcx + rax - 1] ; ret // f675b9488d4401ffc3
+0x0000000140008a92 : div byte ptr [rbp - 0x75] ; xor eax, eax ; ret // f6758b33c0c3
+0x0000000140008c3e : div byte ptr [rbp - 0x78] ; xor rax, rax ; ret // f675884833c0c3
+0x000000014000634d : div byte ptr [rsp + rdi + 0x48] ; test eax, eax ; je 0x140006394 ; call rsi // f6743c4885c07437ffd6
+0x0000000140008a2d : emms ; retf // 0f77cb
+0x0000000140005fb4 : enter -0x2ec5, 0x7d ; sub cl, byte ptr [rax + 0x63] ; retf 0x348 // c83bd17d2a4863ca4803
+0x000000014000792a : enter -0xc8b, 0x49 ; mov eax, ebx ; ret // c875f3498bc3c3
+0x0000000140008aec : enter -0xe8b, 0x48 ; xor eax, eax ; ret // c875f14833c0c3
+0x00000001400065ad : enter -1, -0x75 ; ret // c8ffff8bc3
+0x0000000140007ce3 : enter 0, 0 ; call 0x140004776 // c8000000e884caffff
+0x0000000140007ac8 : enter 0x188, 0x75 ; mov rax, r11 ; ret // c8880175f3498bc3c3
+0x0000000140005fc9 : enter 8, -1 ; ret 0x5489 // c80800ffc28954
+0x0000000140007cfb : fadd dword ptr [rax] ; add byte ptr [rax], al ; call 0x140004776 // d8000000e86ccaffff
+0x000000014000594f : fdiv dword ptr [rsi + rcx - 0x18] ; popfq ; ret // d8740ee89dc3
+0x0000000140006979 : fdivp st(7) ; dec dword ptr [rax - 0x75] ; retf // deffff488bcb
+0x0000000140008a60 : fdivr st(7) ; ret // d8ffc3
+0x000000014000446a : fisttp word ptr [rdi + rcx + 0x44] ; fmul dword ptr [rcx + rcx*4 + 0x1d] ; retf 0x7d // df4c0f44d84c891dca7d00
+0x000000014000895e : fisub word ptr [rbx] ; add byte ptr [rax - 0x75], cl ; ret 0xe283 // de630000488bc283e2
+0x0000000140007557 : fld qword ptr [rax] ; add byte ptr [rax - 0x7d], cl ; ret // dd00004883c3
+0x00000001400017f6 : fmul dword ptr [rax + 0xf] ; ret // d8480fc3
+0x000000014000446e : fmul dword ptr [rcx + rcx*4 + 0x1d] ; retf 0x7d // d84c891dca7d00
+0x00000001400083de : fsubr st(0) ; pop rax ; add al, 0 ; add byte ptr [rax + 0x3b], cl ; ret // d8e858040000483bc3
+0x0000000140008422 : imul eax, dword ptr [rax], 0xc8b4800 ; retf 0x6b4d // 690000488b0cca4d6b
+0x0000000140001e4e : imul ebx, dword ptr [rax], 0xf ; add rsp, 0x20 ; pop rbx ; ret // 6b180f4883c4205bc3
+0x00000001400059d4 : imul ecx, ecx, 0x58 ; add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059ea // 6bc95848030cc2eb07
+0x00000001400059d3 : imul rcx, rcx, 0x58 ; add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059eb // 486bc95848030cc2eb07
+0x000000014000544f : in al, 0 ; add bh, bh ; ret 0xe2eb // e40000ffc2ebe2
+0x00000001400058cd : in al, dx ; and byte ptr [rax - 0x75], cl ; retf 0x8b48 // ec20488bca488b
+0x00000001400015f6 : in al, dx ; sub byte ptr [rbp - 0x75], cl ; cmp byte ptr [r8 - 0x75], cl ; retf 0x8b49 // ec284d8b4138488bca498b
+0x0000000140003dc0 : in eax, 0x39 ; sbb byte ptr [rdi], cl ; sbb byte ptr [rbx], r15b ; retf // e539180f4c183bcb
+0x0000000140001c57 : in eax, 0x8b ; ret 0x348 // e58bc24803
+0x0000000140002877 : in eax, dx ; or byte ptr [rax - 1], cl ; ret // ed0848ffc3
+0x0000000140005b72 : inc bl ; lea rax, [rcx + rax - 3] ; ret // fec3488d4401fdc3
+0x00000001400055c1 : inc dword ptr [rax + 0x160] ; ret // ff8060010000c3
+0x00000001400025b3 : inc dword ptr [rbx - 0x7bf08a08] ; retf 0 // ff83f8750f84ca0000
+0x0000000140008275 : inc dword ptr [rbx - 0x7cb7ffe0] ; retf // ff8320004883cb
+0x00000001400020f6 : inc dword ptr [rbx] ; add rsp, 0x20 ; pop rbx ; ret // ff034883c4205bc3
+0x0000000140005b6c : inc ebx ; lea rax, [rcx + rax - 2] ; ret // ffc3488d4401fec3
+0x0000000140008a61 : inc ebx ; xor eax, eax ; ret // ffc333c0c3
+0x0000000140001794 : inc ecx ; dec r8 ; jne 0x140001798 ; ret // ffc149ffc875f6c3
+0x0000000140005452 : inc edx ; jmp 0x140005439 // ffc2ebe2
+0x0000000140005473 : inc edx ; jmp 0x140005459 // ffc2ebe1
+0x0000000140001793 : inc rcx ; dec r8 ; jne 0x140001799 ; ret // 48ffc149ffc875f6c3
+0x0000000140008831 : insb byte ptr [rdi], dx ; and al, 0x38 ; add rsp, 0x20 ; pop rdi ; ret // 6c24384883c4205fc3
+0x0000000140007d00 : insb byte ptr [rdi], dx ; retf 0xffff // 6ccaffff
+0x0000000140001bbf : int 0xff // cdff15c2e300
+0x000000014000337e : int1 ; xor eax, eax ; ret // f133c0c3
+0x0000000140008aee : int1 ; xor rax, rax ; ret // f14833c0c3
+0x0000000140002e9c : ja 0x140002eab ; mov eax, 0xd ; ret // 7706b80d000000c3
+0x0000000140002da9 : jae 0x140002de4 ; mov rsp, r11 ; pop r12 ; pop rdi ; pop rbp ; ret // 7330498be3415c5f5dc3
+0x000000014000769f : jae 0x1400076bf ; mov rsp, r11 ; pop rdi ; ret // 7318498be35fc3
+0x000000014000337d : jb 0x140003374 ; xor eax, eax ; ret // 72f133c0c3
+0x000000014000458d : jb 0x140004575 ; xor eax, eax ; ret // 72e233c0c3
+0x0000000140002148 : je 0x140002176 ; add rsp, 0x20 ; pop rdi ; ret // 7424404883c4205fc3
+0x0000000140002e3e : je 0x140002e6c ; push rax ; add rsp, 0x30 ; pop rdi ; ret // 7424504883c4305fc3
+0x0000000140002fd1 : je 0x140002fdb ; mov ecx, ebx ; call rax // 74048bcbffd0
+0x000000014000306f : je 0x140003075 ; call rax // 7402ffd0
+0x000000014000306f : je 0x140003079 ; call rax // 7402ffd04883c3
+0x00000001400030a9 : je 0x1400030af ; call rcx // 7402ffd1
+0x00000001400030a9 : je 0x1400030b3 ; call rcx // 7402ffd14883c3
+0x0000000140003130 : je 0x140003136 ; call rax // 7402ffd0
+0x0000000140003130 : je 0x14000313a ; call rax // 7402ffd04883c3
+0x00000001400037fb : je 0x140003829 ; add rsp, 0x20 ; pop rdi ; ret // 7424404883c4205fc3
+0x00000001400038fc : je 0x14000392a ; push rax ; add rsp, 0x30 ; pop rdi ; ret // 7424504883c4305fc3
+0x0000000140003bf1 : je 0x140003c1f ; pop rax ; add rsp, 0x30 ; pop rdi ; ret // 7424584883c4305fc3
+0x0000000140003fe4 : je 0x140003fea ; call rax // 7402ffd0
+0x0000000140003fe4 : je 0x140003fee ; call rax // 7402ffd04883c3
+0x000000014000401c : je 0x140004022 ; call rax // 7402ffd0
+0x000000014000401c : je 0x140004026 ; call rax // 7402ffd04883c3
+0x000000014000452b : je 0x140004534 ; xor eax, eax ; ret // 740333c0c3
+0x0000000140004851 : je 0x14000487f ; add rsp, 0x30 ; pop rdi ; ret // 7424484883c4305fc3
+0x0000000140004b1e : je 0x140004b4c ; add rsp, 0x20 ; pop rdi ; ret // 7424404883c4205fc3
+0x0000000140004d77 : je 0x140004da5 ; add rsp, 0x20 ; pop rdi ; ret // 7424404883c4205fc3
+0x0000000140005a3c : je 0x140005a6a ; add rsp, 0x20 ; pop rdi ; ret // 7424484883c4205fc3
+0x0000000140005dbb : je 0x140005dc3 ; call rcx // 7404ffd1
+0x0000000140006081 : je 0x140006098 ; mov rcx, rbx ; call rax // 7410488bcbffd0
+0x0000000140006353 : je 0x14000638e ; call rsi // 7437ffd6
+0x000000014000634e : je 0x140006393 ; test rax, rax ; je 0x140006393 ; call rsi // 743c4885c07437ffd6
+0x00000001400063a1 : je 0x1400063ce ; call rax // 7429ffd0
+0x00000001400063c2 : je 0x1400063d1 ; mov rcx, rbx ; call rax // 7408488bcbffd0
+0x0000000140006702 : je 0x140006730 ; pop rax ; add rsp, 0x40 ; pop rdi ; ret // 7424584883c4405fc3
+0x000000014000787d : je 0x1400078ab ; js 0x1400078d1 ; add esp, 0x60 ; pop rdi ; ret // 7424784883c4605fc3
+0x0000000140008527 : je 0x14000854d ; mov rcx, qword ptr [rcx + 0x10] ; call 0x140004778 // 741c488b4910e83ec2ffff
+0x0000000140008a8f : je 0x140008a9d ; test dh, dh ; jne 0x140008a28 ; xor eax, eax ; ret // 740484f6758b33c0c3
+0x0000000140008c3b : je 0x140008c4a ; test dh, dh ; jne 0x140008bd2 ; xor rax, rax ; ret // 740484f675884833c0c3
+0x00000001400021f1 : jl 0x140002220 ; add rsp, 0x20 ; pop r12 ; ret // 7c24484883c420415cc3
+0x0000000140003ce6 : jl 0x140003d15 ; push 0x40c48348 ; pop r12 ; ret // 7c24684883c440415cc3
+0x0000000140004a87 : jl 0x140004ab6 ; add rsp, 0x20 ; pop r12 ; ret // 7c24404883c420415cc3
+0x0000000140004c1c : jl 0x140004c4b ; add rsp, 0x20 ; pop r13 ; ret // 7c24404883c420415dc3
+0x00000001400073d9 : jl 0x140007403 ; and bh, bh ; ret 0x15ff // 7c2420ffc2ff15
+0x0000000140007b94 : jmp 0x1030fc7dd // e9404c0fc3
+0x000000014000436e : jmp 0x14000437a // eb07e8cb
+0x0000000140006a86 : jmp qword ptr [rcx] // ff21
+0x0000000140008c6a : jmp qword ptr [rip + 0x5c0] // ff25c0050000ff25c20500
+0x0000000140008c82 : jmp qword ptr [rip + 0x5c8] // ff25c8050000ff25ca0500
+0x000000014000681e : jmp rax // ffe0
+0x0000000140001642 : jne 0x140001649 ; ret // 7502f3c3
+0x0000000140001799 : jne 0x140001793 ; ret // 75f6c3
+0x0000000140001dd2 : jne 0x140001d9a ; xor eax, eax ; add rsp, 0x20 ; pop rbx ; ret // 75bd33c04883c4205bc3
+0x0000000140005b66 : jne 0x140005b28 ; lea rax, [rcx + rax - 1] ; ret // 75b9488d4401ffc3
+0x0000000140006425 : jne 0x14000644c ; mov word ptr [rcx], r10w ; call 0x140002ec8 // 751d66448911e890caffff
+0x000000014000647b : jne 0x140006495 ; mov word ptr [r9], r10w ; call 0x140002ec8 // 751066458911e83acaffff
+0x0000000140006a80 : jne 0x140006aa7 ; call 0x140002ee6 // 751fe859c4ffff21
+0x0000000140007916 : jne 0x140007925 ; mov rax, r11 ; ret // 7508498bc3c3
+0x0000000140007ab7 : jne 0x140007ac5 ; mov rax, r11 ; ret // 7507498bc3c3
+0x0000000140008a93 : jne 0x140008a24 ; xor eax, eax ; ret // 758b33c0c3
+0x0000000140008aed : jne 0x140008ae5 ; xor rax, rax ; ret // 75f14833c0c3
+0x0000000140008c3f : jne 0x140008bce ; xor rax, rax ; ret // 75884833c0c3
+0x0000000140001eb6 : jno 0x140001ed5 ; cmovs ebp, dword ptr [rbx] ; retf 0xb848 // 71180f482bca48b8
+0x0000000140004f69 : jnp 0x140004f99 ; mov rsp, r11 ; pop rbp ; ret // 7b28498be35dc3
+0x0000000140006053 : jns 0x140005fdd ; add byte ptr [rax], al ; ret // 79840000c3
+0x000000014000605b : jns 0x140005fe5 ; add byte ptr [rax], al ; ret // 79840000c3
+0x0000000140006063 : jns 0x140005fed ; add byte ptr [rax], al ; ret // 79840000c3
+0x0000000140002dad : jrcxz 0x140002df5 ; pop rsp ; pop rdi ; pop rbp ; ret // e3415c5f5dc3
+0x00000001400035e6 : jrcxz 0x14000362f ; pop rbp ; pop r12 ; pop rdi ; ret // e3415d415c5fc3
+0x0000000140003fba : jrcxz 0x140004004 ; pop rsi ; pop r13 ; pop r12 ; ret // e3415e415d415cc3
+0x0000000140004f6d : jrcxz 0x140004fce ; ret // e35dc3
+0x0000000140005019 : jrcxz 0x14000501f ; dec dword ptr [rax - 0x75] ; ret // e3ffff488bc3
+0x00000001400076a3 : jrcxz 0x140007706 ; ret // e35fc3
+0x000000014000787f : js 0x1400078cf ; add esp, 0x60 ; pop rdi ; ret // 784883c4605fc3
+0x0000000140007c6e : js 0x140007c5b ; cld ; retf 0xffff // 78e8fccaffff
+0x0000000140007c6d : js 0x140007c5c ; cld ; retf 0xffff // 4b78e8fccaffff
+0x00000001400085fc : js 0x14000864c ; add esp, 0x50 ; pop rbp ; ret // 784883c4505dc3
+0x0000000140005b69 : lea eax, [rcx + rax - 1] ; ret // 8d4401ffc3
+0x0000000140005b6f : lea eax, [rcx + rax - 2] ; ret // 8d4401fec3
+0x0000000140005b75 : lea eax, [rcx + rax - 3] ; ret // 8d4401fdc3
+0x0000000140005b7b : lea eax, [rcx + rax - 4] ; ret // 8d4401fcc3
+0x0000000140005b81 : lea eax, [rcx + rax - 5] ; ret // 8d4401fbc3
+0x0000000140005b87 : lea eax, [rcx + rax - 6] ; ret // 8d4401fac3
+0x0000000140005b8d : lea eax, [rcx + rax - 7] ; ret // 8d4401f9c3
+0x0000000140005b93 : lea eax, [rcx + rax - 8] ; ret // 8d4401f8c3
+0x0000000140001cf5 : lea eax, [rip + 0xa565] ; ret // 8d0565a50000c3
+0x0000000140006371 : lea edx, [r9 - 0xb] ; mov rcx, rax ; call r12 // 418d51f5488bc841ffd4
+0x0000000140002847 : lea edx, [rbp - 0x80] ; mov rcx, rbx ; call rax // 8d5580488bcbffd0
+0x0000000140006372 : lea edx, [rcx - 0xb] ; mov rcx, rax ; call r12 // 8d51f5488bc841ffd4
+0x0000000140001484 : lea edx, [rip + 0xd096] ; mov qword ptr [rdx + rcx*8], rax ; jmp 0x14000145f // 8d1596d00000488904caebc6
+0x0000000140005b68 : lea rax, [rcx + rax - 1] ; ret // 488d4401ffc3
+0x0000000140005b6e : lea rax, [rcx + rax - 2] ; ret // 488d4401fec3
+0x0000000140005b74 : lea rax, [rcx + rax - 3] ; ret // 488d4401fdc3
+0x0000000140005b7a : lea rax, [rcx + rax - 4] ; ret // 488d4401fcc3
+0x0000000140005b80 : lea rax, [rcx + rax - 5] ; ret // 488d4401fbc3
+0x0000000140005b86 : lea rax, [rcx + rax - 6] ; ret // 488d4401fac3
+0x0000000140005b8c : lea rax, [rcx + rax - 7] ; ret // 488d4401f9c3
+0x0000000140005b92 : lea rax, [rcx + rax - 8] ; ret // 488d4401f8c3
+0x0000000140001cf4 : lea rax, [rip + 0xa565] ; ret // 488d0565a50000c3
+0x0000000140002846 : lea rdx, [rbp - 0x80] ; mov rcx, rbx ; call rax // 488d5580488bcbffd0
+0x0000000140008b6d : leave ; cmp rax, rcx ; sbb eax, eax ; sbb eax, -1 ; ret // c9483bc11bc083d8ffc3
+0x00000001400030a8 : leave ; je 0x1400030b0 ; call rcx // c97402ffd1
+0x00000001400030a8 : leave ; je 0x1400030b4 ; call rcx // c97402ffd14883c3
+0x0000000140005dba : leave ; je 0x140005dc4 ; call rcx // c97404ffd1
+0x00000001400059d5 : leave ; pop rax ; add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059e9 // c95848030cc2eb07
+0x00000001400055c0 : lock inc dword ptr [rax + 0x160] ; ret // f0ff8060010000c3
+0x0000000140001367 : loop 0x14000136e ; add byte ptr [rax], al ; add byte ptr [rbx], al ; ret 0xff25 // e2ff00000003c225ff
+0x000000014000458e : loop 0x1400045ca ; rol bl, 0x48 ; mov eax, ecx ; ret // e233c0c3488bc1c3
+0x00000001400049d4 : loop 0x140004963 ; retf // e28bcb
+0x0000000140008a26 : loop 0x140008a30 ; pcmpgtd mm0, qword ptr [rcx + 0x770ff8fa] ; retf // e2ff0f6681faf80f77cb
+0x0000000140007d07 : loopne 0x140007d0f ; add byte ptr [rax], al ; call 0x140004776 // e0000000e860caffff
+0x000000014000544e : mov ah, ah ; add byte ptr [rax], al ; inc edx ; jmp 0x14000543d // 88e40000ffc2ebe2
+0x0000000140007cbf : mov al, 0 ; add byte ptr [rax], al ; call 0x140004776 // b0000000e8a8caffff
+0x000000014000859c : mov bh, 0x44 ; and al, 0x40 ; add rsp, 0x38 ; ret // b74424404883c438c3
+0x0000000140005663 : mov byte ptr [rax + 1], ah ; add byte ptr [rax], al ; mov rax, rcx ; ret // 8860010000488bc1c3
+0x0000000140007c83 : mov byte ptr [rax], al ; add byte ptr [rax], al ; call 0x140004776 // 88000000e8e4caffff
+0x0000000140001aed : mov byte ptr [rax], al ; add byte ptr [rax], al ; ret // 88000000c3
+0x000000014000546b : mov byte ptr [rcx + r8 + 0xcc60], al ; inc edx ; jmp 0x140005461 // 4288840160cc0000ffc2ebe1
+0x000000014000546c : mov byte ptr [rcx + rax + 0xcc60], al ; inc edx ; jmp 0x140005460 // 88840160cc0000ffc2ebe1
+0x0000000140007ac9 : mov byte ptr [rcx], al ; jne 0x140007ac7 ; mov rax, r11 ; ret // 880175f3498bc3c3
+0x0000000140002f3d : mov dword ptr [r10], eax ; add rsp, 0x20 ; pop rbx ; ret // 4189024883c4205bc3
+0x000000014000544a : mov dword ptr [r8 + rcx*2 + 0xe488], eax ; inc edx ; jmp 0x140005441 // 4189844888e40000ffc2ebe2
+0x000000014000647e : mov dword ptr [r9], r10d ; call 0x140002ec5 // 458911e83acaffff
+0x000000014000544b : mov dword ptr [rax + rcx*2 + 0xe488], eax ; inc edx ; jmp 0x140005440 // 89844888e40000ffc2ebe2
+0x0000000140006435 : mov dword ptr [rax], ebx ; call 0x140002e5c // 8918e81ccaffff
+0x0000000140008542 : mov dword ptr [rbx + 8], eax ; add rsp, 0x20 ; pop rbx ; ret // 8943084883c4205bc3
+0x00000001400047a5 : mov dword ptr [rbx], eax ; add rsp, 0x20 ; pop rbx ; ret // 89034883c4205bc3
+0x00000001400037d8 : mov dword ptr [rcx + 8], ecx ; mov ecx, dword ptr [rcx + 4] ; call r8 // 8949088b490441ffd0
+0x0000000140006429 : mov dword ptr [rcx], edx ; call 0x140002ec4 // 8911e890caffff
+0x0000000140006428 : mov dword ptr [rcx], r10d ; call 0x140002ec5 // 448911e890caffff
+0x000000014000323d : mov dword ptr [rdi], eax ; call rbx // 8907ffd3
+0x000000014000148b : mov dword ptr [rdx + rcx*8], eax ; jmp 0x140001458 // 8904caebc6
+0x0000000140002f3e : mov dword ptr [rdx], eax ; add rsp, 0x20 ; pop rbx ; ret // 89024883c4205bc3
+0x0000000140006051 : mov dword ptr [rip + 0x8479], ecx ; ret // 890d79840000c3
+0x0000000140005e02 : mov dword ptr [rip + 0x86b8], ecx ; ret // 890db8860000c3
+0x0000000140002c61 : mov dword ptr [rip + 0xae31], ecx ; ret // 890d31ae0000c3
+0x0000000140002823 : mov dword ptr [rsp + 0x20], edi ; call rax // 897c2420ffd0
+0x0000000140002e2c : mov dword ptr [rsp + 0x20], edx ; call rax // 89542420ffd0
+0x0000000140002822 : mov dword ptr [rsp + 0x20], r15d ; call rax // 44897c2420ffd0
+0x000000014000281e : mov eax, 0x44d38b48 ; mov dword ptr [rsp + 0x20], edi ; call rax // b8488bd344897c2420ffd0
+0x0000000140002e9e : mov eax, 0xd ; ret // b80d000000c3
+0x0000000140007ccb : mov eax, 0xe8000000 ; pushfq ; retf 0xffff // b8000000e89ccaffff
+0x0000000140001607 : mov eax, 1 ; add rsp, 0x28 ; ret // b8010000004883c428c3
+0x0000000140004369 : mov eax, 1 ; jmp 0x14000437f // b801000000eb07e8cb
+0x0000000140002eb9 : mov eax, dword ptr [r9 + rax*8 + 4] ; ret // 418b44c104c3
+0x0000000140003388 : mov eax, dword ptr [rax + rax*8 + 8] ; ret // 8b44c008c3
+0x0000000140001cbb : mov eax, dword ptr [rbx - 4] ; add r8, r15 ; call r8 // 8b43fc4d03c741ffd0
+0x000000014000306a : mov eax, dword ptr [rbx] ; test rax, rax ; je 0x14000307a ; call rax // 8b034885c07402ffd0
+0x000000014000312b : mov eax, dword ptr [rbx] ; test rax, rax ; je 0x14000313b ; call rax // 8b034885c07402ffd0
+0x0000000140003fdf : mov eax, dword ptr [rbx] ; test rax, rax ; je 0x140003fef ; call rax // 8b034885c07402ffd0
+0x0000000140004017 : mov eax, dword ptr [rbx] ; test rax, rax ; je 0x140004027 ; call rax // 8b034885c07402ffd0
+0x0000000140004cea : mov eax, dword ptr [rcx + 0x1c] ; add rsp, 0x28 ; ret // 8b411c4883c428c3
+0x0000000140002eba : mov eax, dword ptr [rcx + rax*8 + 4] ; ret // 8b44c104c3
+0x00000001400011d1 : mov eax, dword ptr [rsp + 0x10] ; add rsp, 0x28 ; ret // 8b4424104883c428c3
+0x0000000140007cd6 : mov eax, eax ; add byte ptr [rax], al ; add al, ch ; nop ; retf 0xffff // 8bc0000000e890caffff
+0x00000001400020ad : mov eax, ebx ; add rsp, 0x20 ; pop rbx ; ret // 8bc34883c4205bc3
+0x00000001400050b4 : mov eax, ebx ; add rsp, 0x40 ; pop rbx ; ret // 8bc34883c4405bc3
+0x0000000140007919 : mov eax, ebx ; ret // 8bc3c3
+0x0000000140008d59 : mov eax, ecx ; add rsp, 0x20 ; pop rbp ; ret // 8bc14883c4205dc3
+0x0000000140008d57 : mov eax, ecx ; mov eax, ecx ; add rsp, 0x20 ; pop rbp ; ret // 8bc18bc14883c4205dc3
+0x0000000140004593 : mov eax, ecx ; ret // 8bc1c3
+0x00000001400016f2 : mov eax, edi ; add rsp, 0x28 ; pop rdi ; pop rbx ; ret // 8bc74883c4285f5bc3
+0x00000001400063e2 : mov eax, esi ; mov rdx, r13 ; mov rcx, rbx ; call rax // 8bc6498bd5488bcbffd0
+0x0000000140004d18 : mov eax, esi ; xor edx, edx ; call 0x140001736 // 8bc633d2e80fcaffff
+0x0000000140008d29 : mov ebp, 0x4890ffff ; add esp, 0x20 ; pop rbp ; ret // bdffff904883c4205dc3
+0x0000000140008830 : mov ebp, dword ptr [rsp + 0x38] ; add rsp, 0x20 ; pop rdi ; ret // 8b6c24384883c4205fc3
+0x0000000140007d12 : mov ebp, eax ; add byte ptr [rax], al ; add al, ch ; push rsp ; retf 0xffff // 8be8000000e854caffff
+0x0000000140006430 : mov ebx, 0x16 ; mov dword ptr [rax], ebx ; call 0x140002e61 // bb160000008918e81ccaffff
+0x000000014000307d : mov ebx, dword ptr [rsp + 0x30] ; add rsp, 0x20 ; pop rdi ; ret // 8b5c24304883c4205fc3
+0x00000001400042f1 : mov ebx, dword ptr [rsp + 0x38] ; add rsp, 0x20 ; pop rdi ; ret // 8b5c24384883c4205fc3
+0x0000000140004481 : mov ebx, dword ptr [rsp + 0x40] ; add rsp, 0x20 ; pop rdi ; ret // 8b5c24404883c4205fc3
+0x0000000140001989 : mov ebx, dword ptr [rsp + 0x48] ; add rsp, 0x30 ; pop rdi ; ret // 8b5c24484883c4305fc3
+0x0000000140008785 : mov ebx, dword ptr [rsp + 8] ; add rsp, 0x10 ; ret // 8b5c24084883c410c3
+0x0000000140007cfa : mov ebx, eax ; add byte ptr [rax], al ; add al, ch ; insb byte ptr [rdi], dx ; retf 0xffff // 8bd8000000e86ccaffff
+0x000000014000891b : mov ecx, 0xa ; call 0x140004b2f // b90a000000e803c2ffff
+0x00000001400037c7 : mov ecx, 8 ; call r8 // b90800000041ffd0
+0x0000000140007d35 : mov ecx, dword ptr [rbx + 0x100] ; call 0x140004778 // 8b8b00010000e830caffff
+0x0000000140007d41 : mov ecx, dword ptr [rbx + 0x108] ; call 0x140004778 // 8b8b08010000e824caffff
+0x0000000140007d4d : mov ecx, dword ptr [rbx + 0x110] ; call 0x140004778 // 8b8b10010000e818caffff
+0x0000000140007d59 : mov ecx, dword ptr [rbx + 0x118] ; call 0x140004778 // 8b8b18010000e80ccaffff
+0x0000000140007d65 : mov ecx, dword ptr [rbx + 0x120] ; call 0x140004778 // 8b8b20010000e800caffff
+0x0000000140007c6c : mov ecx, dword ptr [rbx + 0x78] ; call 0x140004775 // 8b4b78e8fccaffff
+0x0000000140007c75 : mov ecx, dword ptr [rbx + 0x80] ; call 0x140004778 // 8b8b80000000e8f0caffff
+0x0000000140007c81 : mov ecx, dword ptr [rbx + 0x88] ; call 0x140004778 // 8b8b88000000e8e4caffff
+0x0000000140007c8d : mov ecx, dword ptr [rbx + 0x90] ; call 0x140004778 // 8b8b90000000e8d8caffff
+0x0000000140007c99 : mov ecx, dword ptr [rbx + 0x98] ; call 0x140004778 // 8b8b98000000e8cccaffff
+0x0000000140007ca5 : mov ecx, dword ptr [rbx + 0xa0] ; call 0x140004778 // 8b8ba0000000e8c0caffff
+0x0000000140007cb1 : mov ecx, dword ptr [rbx + 0xa8] ; call 0x140004778 // 8b8ba8000000e8b4caffff
+0x0000000140007cbd : mov ecx, dword ptr [rbx + 0xb0] ; call 0x140004778 // 8b8bb0000000e8a8caffff
+0x0000000140007cc9 : mov ecx, dword ptr [rbx + 0xb8] ; call 0x140004778 // 8b8bb8000000e89ccaffff
+0x0000000140007cd5 : mov ecx, dword ptr [rbx + 0xc0] ; call 0x140004778 // 8b8bc0000000e890caffff
+0x0000000140007ce1 : mov ecx, dword ptr [rbx + 0xc8] ; call 0x140004778 // 8b8bc8000000e884caffff
+0x0000000140007ced : mov ecx, dword ptr [rbx + 0xd0] ; call 0x140004778 // 8b8bd0000000e878caffff
+0x0000000140007cf9 : mov ecx, dword ptr [rbx + 0xd8] ; call 0x140004778 // 8b8bd8000000e86ccaffff
+0x0000000140007d05 : mov ecx, dword ptr [rbx + 0xe0] ; call 0x140004778 // 8b8be0000000e860caffff
+0x0000000140007d11 : mov ecx, dword ptr [rbx + 0xe8] ; call 0x140004778 // 8b8be8000000e854caffff
+0x0000000140007d1d : mov ecx, dword ptr [rbx + 0xf0] ; call 0x140004778 // 8b8bf0000000e848caffff
+0x0000000140007d29 : mov ecx, dword ptr [rbx + 0xf8] ; call 0x140004778 // 8b8bf8000000e83ccaffff
+0x00000001400030a4 : mov ecx, dword ptr [rbx] ; test rcx, rcx ; je 0x1400030b4 ; call rcx // 8b0b4885c97402ffd1
+0x000000014000852a : mov ecx, dword ptr [rcx + 0x10] ; call 0x140004775 // 8b4910e83ec2ffff
+0x00000001400037db : mov ecx, dword ptr [rcx + 4] ; call r8 // 8b490441ffd0
+0x0000000140006376 : mov ecx, eax ; call r12 // 8bc841ffd4
+0x000000014000284b : mov ecx, ebx ; call rax // 8bcbffd0
+0x0000000140004d15 : mov ecx, ebx ; mov r8d, esi ; xor edx, edx ; call 0x140001739 // 8bcb448bc633d2e80fcaffff
+0x000000014000276e : mov edi, 0x2b000001 ; ret // bf0100002bc3
+0x0000000140007cca : mov edi, dword ptr [rax - 0x18000000] ; pushfq ; retf 0xffff // 8bb8000000e89ccaffff
+0x0000000140004f68 : mov edi, dword ptr [rbx + 0x28] ; mov rsp, r11 ; pop rbp ; ret // 8b7b28498be35dc3
+0x0000000140001e4d : mov edx, 0x480f186b ; add esp, 0x20 ; pop rbx ; ret // ba6b180f4883c4205bc3
+0x0000000140002876 : mov edx, 0xff4808ed ; ret // baed0848ffc3
+0x0000000140002e27 : mov edx, dword ptr [rsp + 0x60] ; mov qword ptr [rsp + 0x20], r10 ; call rax // 8b5424604c89542420ffd0
+0x0000000140001b84 : mov edx, ebp ; add rax, r15 ; call rax // 8bd54903c7ffd0
+0x00000001400063e5 : mov edx, ebp ; mov rcx, rbx ; call rax // 8bd5488bcbffd0
+0x0000000140002820 : mov edx, ebx ; mov dword ptr [rsp + 0x20], r15d ; call rax // 8bd344897c2420ffd0
+0x0000000140008cee : mov esi, 0x4890ffff ; add esp, 0x20 ; pop rbp ; ret // beffff904883c4205dc3
+0x000000014000769e : mov esi, dword ptr [rbx + 0x18] ; mov rsp, r11 ; pop rdi ; ret // 8b7318498be35fc3
+0x00000001400067cc : mov esi, dword ptr [rsp + 0x38] ; add rsp, 0x20 ; pop rdi ; ret // 8b7424384883c4205fc3
+0x0000000140002147 : mov esi, dword ptr [rsp + 0x40] ; add rsp, 0x20 ; pop rdi ; ret // 8b7424404883c4205fc3
+0x0000000140005a3b : mov esi, dword ptr [rsp + 0x48] ; add rsp, 0x20 ; pop rdi ; ret // 8b7424484883c4205fc3
+0x0000000140004850 : mov esi, dword ptr [rsp + 0x48] ; add rsp, 0x30 ; pop rdi ; ret // 8b7424484883c4305fc3
+0x0000000140002e3d : mov esi, dword ptr [rsp + 0x50] ; add rsp, 0x30 ; pop rdi ; ret // 8b7424504883c4305fc3
+0x0000000140003bf0 : mov esi, dword ptr [rsp + 0x58] ; add rsp, 0x30 ; pop rdi ; ret // 8b7424584883c4305fc3
+0x0000000140006701 : mov esi, dword ptr [rsp + 0x58] ; add rsp, 0x40 ; pop rdi ; ret // 8b7424584883c4405fc3
+0x000000014000787c : mov esi, dword ptr [rsp + 0x78] ; add rsp, 0x60 ; pop rdi ; ret // 8b7424784883c4605fc3
+0x0000000140005de0 : mov esp, 0x48000086 ; add esp, 0x28 ; ret // bc8600004883c428c3
+0x0000000140008e2f : mov esp, 0x4890ffff ; add esp, 0x20 ; pop rbp ; ret // bcffff904883c4205dc3
+0x00000001400085f9 : mov esp, dword ptr [rsp + 0x78] ; add rsp, 0x50 ; pop rbp ; ret // 8b6424784883c4505dc3
+0x0000000140002dac : mov esp, ebx ; pop r12 ; pop rdi ; pop rbp ; ret // 8be3415c5f5dc3
+0x00000001400035e5 : mov esp, ebx ; pop r13 ; pop r12 ; pop rdi ; ret // 8be3415d415c5fc3
+0x0000000140003fb9 : mov esp, ebx ; pop r14 ; pop r13 ; pop r12 ; ret // 8be3415e415d415cc3
+0x0000000140004f6c : mov esp, ebx ; pop rbp ; ret // 8be35dc3
+0x00000001400076a2 : mov esp, ebx ; pop rdi ; ret // 8be35fc3
+0x0000000140008302 : mov qword ptr [rbx], rax ; add rsp, 0x20 ; pop rbx ; ret // 4889034883c4205bc3
+0x00000001400037d7 : mov qword ptr [rcx + 8], r9 ; mov ecx, dword ptr [rcx + 4] ; call r8 // 4c8949088b490441ffd0
+0x000000014000323c : mov qword ptr [rdi], rax ; call rbx // 488907ffd3
+0x000000014000148a : mov qword ptr [rdx + rcx*8], rax ; jmp 0x140001459 // 488904caebc6
+0x0000000140006050 : mov qword ptr [rip + 0x8479], rcx ; ret // 48890d79840000c3
+0x0000000140005e01 : mov qword ptr [rip + 0x86b8], rcx ; ret // 48890db8860000c3
+0x0000000140002c60 : mov qword ptr [rip + 0xae31], rcx ; ret // 48890d31ae0000c3
+0x0000000140002e2b : mov qword ptr [rsp + 0x20], r10 ; call rax // 4c89542420ffd0
+0x0000000140008784 : mov r11, qword ptr [rsp + 8] ; add rsp, 0x10 ; ret // 4c8b5c24084883c410c3
+0x00000001400063e1 : mov r8, r14 ; mov rdx, r13 ; mov rcx, rbx ; call rax // 4d8bc6498bd5488bcbffd0
+0x0000000140001cba : mov r8d, dword ptr [rbx - 4] ; add r8, r15 ; call r8 // 448b43fc4d03c741ffd0
+0x0000000140004d17 : mov r8d, esi ; xor edx, edx ; call 0x140001737 // 448bc633d2e80fcaffff
+0x0000000140003387 : mov rax, qword ptr [r8 + rax*8 + 8] ; ret // 498b44c008c3
+0x0000000140003069 : mov rax, qword ptr [rbx] ; test rax, rax ; je 0x14000307b ; call rax // 488b034885c07402ffd0
+0x000000014000312a : mov rax, qword ptr [rbx] ; test rax, rax ; je 0x14000313c ; call rax // 488b034885c07402ffd0
+0x0000000140003fde : mov rax, qword ptr [rbx] ; test rax, rax ; je 0x140003ff0 ; call rax // 488b034885c07402ffd0
+0x0000000140004016 : mov rax, qword ptr [rbx] ; test rax, rax ; je 0x140004028 ; call rax // 488b034885c07402ffd0
+0x00000001400011d0 : mov rax, qword ptr [rsp + 0x10] ; add rsp, 0x28 ; ret // 488b4424104883c428c3
+0x0000000140007918 : mov rax, r11 ; ret // 498bc3c3
+0x00000001400020ac : mov rax, rbx ; add rsp, 0x20 ; pop rbx ; ret // 488bc34883c4205bc3
+0x0000000140004592 : mov rax, rcx ; ret // 488bc1c3
+0x0000000140007d34 : mov rcx, qword ptr [rbx + 0x100] ; call 0x140004779 // 488b8b00010000e830caffff
+0x0000000140007d40 : mov rcx, qword ptr [rbx + 0x108] ; call 0x140004779 // 488b8b08010000e824caffff
+0x0000000140007d4c : mov rcx, qword ptr [rbx + 0x110] ; call 0x140004779 // 488b8b10010000e818caffff
+0x0000000140007d58 : mov rcx, qword ptr [rbx + 0x118] ; call 0x140004779 // 488b8b18010000e80ccaffff
+0x0000000140007d64 : mov rcx, qword ptr [rbx + 0x120] ; call 0x140004779 // 488b8b20010000e800caffff
+0x0000000140007c6b : mov rcx, qword ptr [rbx + 0x78] ; call 0x140004776 // 488b4b78e8fccaffff
+0x0000000140007c74 : mov rcx, qword ptr [rbx + 0x80] ; call 0x140004779 // 488b8b80000000e8f0caffff
+0x0000000140007c80 : mov rcx, qword ptr [rbx + 0x88] ; call 0x140004779 // 488b8b88000000e8e4caffff
+0x0000000140007c8c : mov rcx, qword ptr [rbx + 0x90] ; call 0x140004779 // 488b8b90000000e8d8caffff
+0x0000000140007c98 : mov rcx, qword ptr [rbx + 0x98] ; call 0x140004779 // 488b8b98000000e8cccaffff
+0x0000000140007ca4 : mov rcx, qword ptr [rbx + 0xa0] ; call 0x140004779 // 488b8ba0000000e8c0caffff
+0x0000000140007cb0 : mov rcx, qword ptr [rbx + 0xa8] ; call 0x140004779 // 488b8ba8000000e8b4caffff
+0x0000000140007cbc : mov rcx, qword ptr [rbx + 0xb0] ; call 0x140004779 // 488b8bb0000000e8a8caffff
+0x0000000140007cc8 : mov rcx, qword ptr [rbx + 0xb8] ; call 0x140004779 // 488b8bb8000000e89ccaffff
+0x0000000140007cd4 : mov rcx, qword ptr [rbx + 0xc0] ; call 0x140004779 // 488b8bc0000000e890caffff
+0x0000000140007ce0 : mov rcx, qword ptr [rbx + 0xc8] ; call 0x140004779 // 488b8bc8000000e884caffff
+0x0000000140007cec : mov rcx, qword ptr [rbx + 0xd0] ; call 0x140004779 // 488b8bd0000000e878caffff
+0x0000000140007cf8 : mov rcx, qword ptr [rbx + 0xd8] ; call 0x140004779 // 488b8bd8000000e86ccaffff
+0x0000000140007d04 : mov rcx, qword ptr [rbx + 0xe0] ; call 0x140004779 // 488b8be0000000e860caffff
+0x0000000140007d10 : mov rcx, qword ptr [rbx + 0xe8] ; call 0x140004779 // 488b8be8000000e854caffff
+0x0000000140007d1c : mov rcx, qword ptr [rbx + 0xf0] ; call 0x140004779 // 488b8bf0000000e848caffff
+0x0000000140007d28 : mov rcx, qword ptr [rbx + 0xf8] ; call 0x140004779 // 488b8bf8000000e83ccaffff
+0x00000001400030a3 : mov rcx, qword ptr [rbx] ; test rcx, rcx ; je 0x1400030b5 ; call rcx // 488b0b4885c97402ffd1
+0x0000000140008529 : mov rcx, qword ptr [rcx + 0x10] ; call 0x140004776 // 488b4910e83ec2ffff
+0x0000000140006375 : mov rcx, rax ; call r12 // 488bc841ffd4
+0x000000014000284a : mov rcx, rbx ; call rax // 488bcbffd0
+0x0000000140004f67 : mov rdi, qword ptr [r11 + 0x28] ; mov rsp, r11 ; pop rbp ; ret // 498b7b28498be35dc3
+0x0000000140001b83 : mov rdx, r13 ; add rax, r15 ; call rax // 498bd54903c7ffd0
+0x00000001400063e4 : mov rdx, r13 ; mov rcx, rbx ; call rax // 498bd5488bcbffd0
+0x000000014000281f : mov rdx, rbx ; mov dword ptr [rsp + 0x20], r15d ; call rax // 488bd344897c2420ffd0
+0x000000014000769d : mov rsi, qword ptr [r11 + 0x18] ; mov rsp, r11 ; pop rdi ; ret // 498b7318498be35fc3
+0x0000000140002dab : mov rsp, r11 ; pop r12 ; pop rdi ; pop rbp ; ret // 498be3415c5f5dc3
+0x00000001400035e4 : mov rsp, r11 ; pop r13 ; pop r12 ; pop rdi ; ret // 498be3415d415c5fc3
+0x0000000140003fb8 : mov rsp, r11 ; pop r14 ; pop r13 ; pop r12 ; ret // 498be3415e415d415cc3
+0x0000000140004f6b : mov rsp, r11 ; pop rbp ; ret // 498be35dc3
+0x00000001400076a1 : mov rsp, r11 ; pop rdi ; ret // 498be35fc3
+0x000000014000544d : mov spl, spl ; add byte ptr [rax], al ; inc edx ; jmp 0x14000543e // 4888e40000ffc2ebe2
+0x000000014000647d : mov word ptr [r9], r10w ; call 0x140002ec6 // 66458911e83acaffff
+0x0000000140006427 : mov word ptr [rcx], r10w ; call 0x140002ec6 // 66448911e890caffff
+0x0000000140008e45 : movabs eax, dword ptr [0x5d20c4834890ffff] ; ret // a1ffff904883c4205dc3
+0x0000000140001cf8 : movsd dword ptr [rdi], dword ptr [rsi] ; add byte ptr [rax], al ; ret // a50000c3
+0x0000000140001cf7 : movsd dword ptr [rdi], dword ptr gs:[rsi] ; add byte ptr [rax], al ; ret // 65a50000c3
+0x000000014000895f : movsxd rax, dword ptr [rax] ; add byte ptr [rax - 0x75], cl ; ret 0xe283 // 630000488bc283e2
+0x000000014000859b : movzx eax, word ptr [rsp + 0x40] ; add rsp, 0x38 ; ret // 0fb74424404883c438c3
+0x00000001400061fa : neg eax ; dec eax ; add rsp, 0x28 ; ret // f7d8ffc84883c428c3
+0x0000000140008caf : nop ; add rsp, 0x20 ; pop rbp ; ret // 904883c4205dc3
+0x0000000140001005 : nop ; nop ; nop ; nop ; nop ; nop ; nop ; nop ; ret // 9090909090909090c3
+0x0000000140001006 : nop ; nop ; nop ; nop ; nop ; nop ; nop ; ret // 90909090909090c3
+0x0000000140001007 : nop ; nop ; nop ; nop ; nop ; nop ; ret // 909090909090c3
+0x0000000140001008 : nop ; nop ; nop ; nop ; nop ; ret // 9090909090c3
+0x0000000140001009 : nop ; nop ; nop ; nop ; ret // 90909090c3
+0x000000014000100a : nop ; nop ; nop ; ret // 909090c3
+0x000000014000100b : nop ; nop ; ret // 9090c3
+0x000000014000100c : nop ; ret // 90c3
+0x000000014000642c : nop ; retf 0xffff // 90caffff
+0x0000000140004508 : nop dword ptr [rax + rax] ; ret // 0f1f840000000000c3
+0x0000000140004507 : nop word ptr [rax + rax] ; ret // 660f1f840000000000c3
+0x0000000140008c09 : or al, 0x48 ; xor eax, eax ; ret // 0c4833c0c3
+0x0000000140002d7f : or al, 0x83 ; sti ; push qword ptr [rdi + rax - 0x75] ; retf // 0c83fbff74078bcb
+0x0000000140008436 : or al, 0x8b ; retf // 0c8bcbe8c2aaff
+0x000000014000891a : or al, 0xb9 ; or al, byte ptr [rax] ; add byte ptr [rax], al ; call 0x140004b30 // 0cb90a000000e803c2ffff
+0x00000001400059d9 : or al, 0xc2 ; jmp 0x1400059e5 // 0cc2eb07
+0x0000000140001c4b : or al, 0xff ; ret 0x8348 // 0cffc24883
+0x000000014000891c : or al, byte ptr [rax] ; add byte ptr [rax], al ; call 0x140004b2e // 0a000000e803c2ffff
+0x00000001400076ff : or bh, bh ; ret 0x15ff // 08ffc2ff15
+0x000000014000457a : or byte ptr [r11], al ; ret 0x3b4c // 410803c24c3b
+0x00000001400017e8 : or byte ptr [rax + 0xf], cl ; ret // 08480fc3
+0x0000000140001004 : or byte ptr [rax - 0x6f6f6f70], dl ; nop ; nop ; nop ; ret // 089090909090909090c3
+0x0000000140002849 : or byte ptr [rax - 0x75], 0xcb ; call rax // 80488bcbffd0
+0x0000000140001d3e : or byte ptr [rax - 0x75], cl ; retf // 08488bcb
+0x00000001400073d6 : or byte ptr [rax - 0x77], cl ; jl 0x140007406 ; and bh, bh ; ret 0x15ff // 0848897c2420ffc2ff15
+0x0000000140002878 : or byte ptr [rax - 1], cl ; ret // 0848ffc3
+0x0000000140001d74 : or byte ptr [rax - 1], cl ; retf // 0848ffcb
+0x00000001400042e5 : or byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; retf // 080000488bcb
+0x00000001400037c8 : or byte ptr [rax], al ; add byte ptr [rax], al ; call r8 // 0800000041ffd0
+0x000000014000457b : or byte ptr [rbx], al ; ret 0x3b4c // 0803c24c3b
+0x0000000140008a50 : or byte ptr [rcx + 0x33], cl ; ret 0x8549 // 084933c24985
+0x0000000140002873 : or byte ptr [rcx + 0xf], al ; mov edx, 0xff4808ed ; ret // 08410fbaed0848ffc3
+0x0000000140007917 : or byte ptr [rcx - 0x75], cl ; ret // 08498bc3
+0x0000000140007d43 : or byte ptr [rcx], al ; add byte ptr [rax], al ; call 0x140004776 // 08010000e824caffff
+0x000000014000357c : or byte ptr [rsi + 0x39], ah ; xor esi, dword ptr [rcx + rdx - 1] ; ret 0xff49 // 086639337411ffc249ff
+0x0000000140008526 : or byte ptr [rsp + rbx + 0x48], dh ; mov ecx, dword ptr [rcx + 0x10] ; call 0x140004779 // 08741c488b4910e83ec2ffff
+0x000000014000688d : or cl, byte ptr [rax - 0x75] ; retf 0x8ae8 // 0a488bcae88a
+0x0000000140008a36 : or dword ptr [rax + 0x3b], ecx ; ret 0xbf75 // 09483bc275bf
+0x0000000140008bdf : or dword ptr [rax + 0x3b], ecx ; ret 0xc575 // 09483bc275c5
+0x0000000140001866 : or dword ptr [rcx], edi ; cwde ; clc ; add byte ptr [rax], al ; add byte ptr [rdi], cl ; xchg eax, ebp ; ret // 093998f80000000f95c3
+0x0000000140008a00 : or dword ptr [rdx], edi ; ret 0x5675 // 093ac27556
+0x0000000140006052 : or eax, 0x8479 ; ret // 0d79840000c3
+0x0000000140005e03 : or eax, 0x86b8 ; ret // 0db8860000c3
+0x0000000140002c62 : or eax, 0xae31 ; ret // 0d31ae0000c3
+0x000000014000170b : or eax, 0xbdd8 ; sete al ; ret // 0dd8bd00000f94c0c3
+0x0000000140006624 : or eax, 0xffffffff ; add rsp, 0x28 ; ret // 83c8ff4883c428c3
+0x00000001400030a5 : or ecx, dword ptr [rax - 0x7b] ; leave ; je 0x1400030b3 ; call rcx // 0b4885c97402ffd1
+0x0000000140008371 : or rax, 0xffffffffffffffff ; add rsp, 0x28 ; ret // 4883c8ff4883c428c3
+0x0000000140008a28 : pcmpgtd mm0, qword ptr [rcx + 0x770ff8fa] ; retf // 0f6681faf80f77cb
+0x000000014000760a : pop r12 ; pop rbp ; ret // 415c5dc3
+0x0000000140002dae : pop r12 ; pop rdi ; pop rbp ; ret // 415c5f5dc3
+0x0000000140006405 : pop r12 ; pop rdi ; pop rsi ; pop rbp ; pop rbx ; ret // 415c5f5e5d5bc3
+0x0000000140002a5a : pop r12 ; pop rdi ; pop rsi ; pop rbp ; ret // 415c5f5e5dc3
+0x0000000140007266 : pop r12 ; pop rdi ; pop rsi ; ret // 415c5f5ec3
+0x0000000140001ced : pop r12 ; pop rdi ; ret // 415c5fc3
+0x0000000140001fd6 : pop r12 ; ret // 415cc3
+0x0000000140007608 : pop r13 ; pop r12 ; pop rbp ; ret // 415d415c5dc3
+0x0000000140006403 : pop r13 ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; pop rbx ; ret // 415d415c5f5e5d5bc3
+0x0000000140002a58 : pop r13 ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; ret // 415d415c5f5e5dc3
+0x0000000140007264 : pop r13 ; pop r12 ; pop rdi ; pop rsi ; ret // 415d415c5f5ec3
+0x0000000140001ceb : pop r13 ; pop r12 ; pop rdi ; ret // 415d415c5fc3
+0x0000000140003afe : pop r13 ; pop r12 ; ret // 415d415cc3
+0x0000000140004c23 : pop r13 ; ret // 415dc3
+0x0000000140007606 : pop r14 ; pop r13 ; pop r12 ; pop rbp ; ret // 415e415d415c5dc3
+0x0000000140002a56 : pop r14 ; pop r13 ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; ret // 415e415d415c5f5e5dc3
+0x0000000140007262 : pop r14 ; pop r13 ; pop r12 ; pop rdi ; pop rsi ; ret // 415e415d415c5f5ec3
+0x0000000140001ce9 : pop r14 ; pop r13 ; pop r12 ; pop rdi ; ret // 415e415d415c5fc3
+0x0000000140003afc : pop r14 ; pop r13 ; pop r12 ; ret // 415e415d415cc3
+0x0000000140008952 : pop r14 ; ret // 415ec3
+0x0000000140004a09 : pop r15 ; pop r13 ; pop r12 ; ret // 415f415d415cc3
+0x0000000140007604 : pop r15 ; pop r14 ; pop r13 ; pop r12 ; pop rbp ; ret // 415f415e415d415c5dc3
+0x0000000140001ce7 : pop r15 ; pop r14 ; pop r13 ; pop r12 ; pop rdi ; ret // 415f415e415d415c5fc3
+0x00000001400083e0 : pop rax ; add al, 0 ; add byte ptr [rax + 0x3b], cl ; ret // 58040000483bc3
+0x00000001400059d6 : pop rax ; add rcx, qword ptr [rdx + rax*8] ; jmp 0x1400059e8 // 5848030cc2eb07
+0x000000014000550a : pop rax ; add rsp, 0x30 ; pop r13 ; ret // 584883c430415dc3
+0x0000000140003bf3 : pop rax ; add rsp, 0x30 ; pop rdi ; ret // 584883c4305fc3
+0x0000000140006704 : pop rax ; add rsp, 0x40 ; pop rdi ; ret // 584883c4405fc3
+0x0000000140001167 : pop rax ; ret // 58c3
+0x0000000140007609 : pop rbp ; pop r12 ; pop rbp ; ret // 5d415c5dc3
+0x0000000140006404 : pop rbp ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; pop rbx ; ret // 5d415c5f5e5d5bc3
+0x0000000140002a59 : pop rbp ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; ret // 5d415c5f5e5dc3
+0x0000000140007265 : pop rbp ; pop r12 ; pop rdi ; pop rsi ; ret // 5d415c5f5ec3
+0x0000000140001cec : pop rbp ; pop r12 ; pop rdi ; ret // 5d415c5fc3
+0x0000000140003aff : pop rbp ; pop r12 ; ret // 5d415cc3
+0x0000000140006409 : pop rbp ; pop rbx ; ret // 5d5bc3
+0x0000000140002a5e : pop rbp ; ret // 5dc3
+0x00000001400016f9 : pop rbx ; ret // 5bc3
+0x0000000140004a0a : pop rdi ; pop r13 ; pop r12 ; ret // 5f415d415cc3
+0x0000000140007605 : pop rdi ; pop r14 ; pop r13 ; pop r12 ; pop rbp ; ret // 5f415e415d415c5dc3
+0x0000000140001ce8 : pop rdi ; pop r14 ; pop r13 ; pop r12 ; pop rdi ; ret // 5f415e415d415c5fc3
+0x0000000140002db0 : pop rdi ; pop rbp ; ret // 5f5dc3
+0x00000001400016f8 : pop rdi ; pop rbx ; ret // 5f5bc3
+0x0000000140006407 : pop rdi ; pop rsi ; pop rbp ; pop rbx ; ret // 5f5e5d5bc3
+0x0000000140002a5c : pop rdi ; pop rsi ; pop rbp ; ret // 5f5e5dc3
+0x0000000140007268 : pop rdi ; pop rsi ; ret // 5f5ec3
+0x0000000140001991 : pop rdi ; ret // 5fc3
+0x0000000140007607 : pop rsi ; pop r13 ; pop r12 ; pop rbp ; ret // 5e415d415c5dc3
+0x0000000140006402 : pop rsi ; pop r13 ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; pop rbx ; ret // 5e415d415c5f5e5d5bc3
+0x0000000140002a57 : pop rsi ; pop r13 ; pop r12 ; pop rdi ; pop rsi ; pop rbp ; ret // 5e415d415c5f5e5dc3
+0x0000000140007263 : pop rsi ; pop r13 ; pop r12 ; pop rdi ; pop rsi ; ret // 5e415d415c5f5ec3
+0x0000000140001cea : pop rsi ; pop r13 ; pop r12 ; pop rdi ; ret // 5e415d415c5fc3
+0x0000000140003afd : pop rsi ; pop r13 ; pop r12 ; ret // 5e415d415cc3
+0x0000000140006408 : pop rsi ; pop rbp ; pop rbx ; ret // 5e5d5bc3
+0x0000000140002a5d : pop rsi ; pop rbp ; ret // 5e5dc3
+0x0000000140007269 : pop rsi ; ret // 5ec3
+0x0000000140007c0e : pop rsi ; retf // 5ecb
+0x0000000140004658 : pop rsp ; and al, 0x30 ; add rsp, 0x20 ; pop r12 ; ret // 5c24304883c420415cc3
+0x000000014000307e : pop rsp ; and al, 0x30 ; add rsp, 0x20 ; pop rdi ; ret // 5c24304883c4205fc3
+0x00000001400042f2 : pop rsp ; and al, 0x38 ; add rsp, 0x20 ; pop rdi ; ret // 5c24384883c4205fc3
+0x0000000140004482 : pop rsp ; and al, 0x40 ; add rsp, 0x20 ; pop rdi ; ret // 5c24404883c4205fc3
+0x000000014000198a : pop rsp ; and al, 0x48 ; add rsp, 0x30 ; pop rdi ; ret // 5c24484883c4305fc3
+0x0000000140008786 : pop rsp ; and al, 8 ; add rsp, 0x10 ; ret // 5c24084883c410c3
+0x000000014000760b : pop rsp ; pop rbp ; ret // 5c5dc3
+0x0000000140002daf : pop rsp ; pop rdi ; pop rbp ; ret // 5c5f5dc3
+0x0000000140006406 : pop rsp ; pop rdi ; pop rsi ; pop rbp ; pop rbx ; ret // 5c5f5e5d5bc3
+0x0000000140002a5b : pop rsp ; pop rdi ; pop rsi ; pop rbp ; ret // 5c5f5e5dc3
+0x0000000140007267 : pop rsp ; pop rdi ; pop rsi ; ret // 5c5f5ec3
+0x0000000140001cee : pop rsp ; pop rdi ; ret // 5c5fc3
+0x0000000140001fd7 : pop rsp ; ret // 5cc3
+0x0000000140005953 : popfq ; ret // 9dc3
+0x0000000140006b00 : push -0x7a00001f ; ror byte ptr [rdi], 0x84 ; retf 2 // 68e1ffff85c00f84ca0200
+0x0000000140003ce8 : push 0x40c48348 ; pop r12 ; ret // 684883c440415cc3
+0x0000000140001641 : push qword ptr [rbp + 2] ; ret // ff7502f3c3
+0x0000000140002d82 : push qword ptr [rdi + rax - 0x75] ; retf // ff74078bcb
+0x0000000140007339 : push rax ; add rsp, 0x20 ; pop r12 ; pop rdi ; pop rsi ; ret // 504883c420415c5f5ec3
+0x0000000140002e40 : push rax ; add rsp, 0x30 ; pop rdi ; ret // 504883c4305fc3
+0x0000000140001d3d : push rax ; or byte ptr [rax - 0x75], cl ; retf // 5008488bcb
+0x0000000140008600 : push rax ; pop rbp ; ret // 505dc3
+0x0000000140002848 : push rbp ; or byte ptr [rax - 0x75], 0xcb ; call rax // 5580488bcbffd0
+0x0000000140007c17 : push rbp ; retf // 55cb
+0x00000001400017ec : push rcx ; adc byte ptr [rax - 0x7d], cl ; rol dword ptr [rax + 0x48], 0xf ; ret // 51104883c140480fc3
+0x0000000140001802 : push rcx ; call 0x191c32759 // 51e8480fc351f0480fc3
+0x0000000140006373 : push rcx ; cmc ; mov rcx, rax ; call r12 // 51f5488bc841ffd4
+0x00000001400017f5 : push rcx ; fmul dword ptr [rax + 0xf] ; ret // 51d8480fc3
+0x00000001400017e7 : push rcx ; or byte ptr [rax + 0xf], cl ; ret // 5108480fc3
+0x0000000140002e2d : push rsp ; and al, 0x20 ; call rax // 542420ffd0
+0x0000000140002e28 : push rsp ; and al, 0x60 ; mov qword ptr [rsp + 0x20], r10 ; call rax // 5424604c89542420ffd0
+0x0000000140007d18 : push rsp ; retf 0xffff // 54caffff
+0x0000000140007cd0 : pushfq ; retf 0xffff // 9ccaffff
+0x0000000140002ed9 : rcl byte ptr [rax], 0x48 ; add esp, 0x28 ; ret // c0104883c428c3
+0x0000000140008b70 : rcr dword ptr [rbx], 0xc0 ; sbb eax, -1 ; ret // c11bc083d8ffc3
+0x000000014000100d : ret // c3
+0x000000014000120b : ret 0 // c20000
+0x00000001400073dd : ret 0x15ff // c2ff15
+0x0000000140004df9 : ret 0x1677 // c27716
+0x0000000140001c59 : ret 0x348 // c24803
+0x0000000140003335 : ret 0x39e9 // c2e939
+0x0000000140005ee7 : ret 0x3b48 // c2483b
+0x000000014000457d : ret 0x3b4c // c24c3b
+0x0000000140006fe2 : ret 0x4802 // c20248
+0x0000000140003d55 : ret 0x4809 // c20948
+0x0000000140001d6f : ret 0x4830 // c23048
+0x0000000140003d81 : ret 0x4858 // c25848
+0x0000000140001dcd : ret 0x4930 // c23049
+0x00000001400036ef : ret 0x4c10 // c2104c
+0x0000000140005fcd : ret 0x5489 // c28954
+0x0000000140008a02 : ret 0x5675 // c27556
+0x0000000140008bb4 : ret 0x5775 // c27557
+0x00000001400023ab : ret 0x6348 // c24863
+0x0000000140006501 : ret 0x6602 // c20266
+0x000000014000345a : ret 0x69 // c26900
+0x0000000140001da8 : ret 0x6b48 // c2486b
+0x00000001400059da : ret 0x7eb // c2eb07
+0x0000000140003378 : ret 0x8310 // c21083
+0x0000000140001c4d : ret 0x8348 // c24883
+0x00000001400064ec : ret 0x8349 // c24983
+0x00000001400037ba : ret 0x8389 // c28983
+0x0000000140008a53 : ret 0x8549 // c24985
+0x0000000140004132 : ret 0x86 // c28600
+0x0000000140002356 : ret 0x8944 // c24489
+0x00000001400022e7 : ret 0x8d4c // c24c8d
+0x0000000140001374 : ret 0x9848 // c24898
+0x0000000140004ca9 : ret 0xbe0f // c20fbe
+0x0000000140008a39 : ret 0xbf75 // c275bf
+0x00000001400065e6 : ret 0xc033 // c233c0
+0x0000000140001318 : ret 0xc085 // c285c0
+0x0000000140008be2 : ret 0xc575 // c275c5
+0x00000001400073a1 : ret 0xc8ff // c2ffc8
+0x0000000140007021 : ret 0xd233 // c233d2
+0x0000000140001313 : ret 0xe083 // c283e0
+0x0000000140005474 : ret 0xe1eb // c2ebe1
+0x0000000140002304 : ret 0xe283 // c283e2
+0x0000000140005453 : ret 0xe2eb // c2ebe2
+0x0000000140001bc2 : ret 0xe3 // c2e300
+0x0000000140006156 : ret 0xf48 // c2480f
+0x000000014000248f : ret 0xf8d1 // c2d1f8
+0x000000014000136d : ret 0xff25 // c225ff
+0x0000000140004f40 : ret 0xff48 // c248ff
+0x0000000140003583 : ret 0xff49 // c249ff
+0x000000014000843a : ret 0xffaa // c2aaff
+0x0000000140003f6b : ret 0xfffd // c2fdff
+0x000000014000852f : ret 0xffff // c2ffff
+0x0000000140008c72 : ret 5 // c20500
+0x0000000140008438 : retf // cbe8c2aaff
+0x00000001400025b9 : retf 0 // ca0000
+0x000000014000309c : retf 0x1773 // ca7317
+0x0000000140003a35 : retf 0x1d75 // ca751d
+0x0000000140003056 : retf 0x2d73 // ca732d
+0x0000000140005808 : retf 0x2ee8 // cae82e
+0x0000000140003496 : retf 0x30 // ca3000
+0x0000000140005fbb : retf 0x348 // ca4803
+0x0000000140001ea5 : retf 0x3572 // ca7235
+0x0000000140005e67 : retf 0x3574 // ca7435
+0x000000014000738b : retf 0x3840 // ca4038
+0x000000014000366a : retf 0x3939 // ca3939
+0x0000000140003ba1 : retf 0x3de8 // cae83d
+0x0000000140005466 : retf 0x448a // ca8a44
+0x0000000140008d97 : retf 0x4be8 // cae84b
+0x0000000140002732 : retf 0x4c89 // ca894c
+0x00000001400023a8 : retf 0x6348 // ca4863
+0x0000000140005ecd : retf 0x634c // ca4c63
+0x0000000140001ff3 : retf 0x63e8 // cae863
+0x0000000140008428 : retf 0x6b4d // ca4d6b
+0x0000000140004472 : retf 0x7d // ca7d00
+0x0000000140006890 : retf 0x8ae8 // cae88a
+0x0000000140005658 : retf 0x8b48 // ca488b
+0x00000001400015e5 : retf 0x8b49 // ca498b
+0x000000014000739b : retf 0x8bff // caff8b
+0x0000000140005815 : retf 0xade8 // cae8ad
+0x0000000140005443 : retf 0xb70f // ca0fb7
+0x0000000140001ebb : retf 0xb848 // ca48b8
+0x0000000140008b9a : retf 0xbb49 // ca49bb
+0x0000000140001e3e : retf 0xc148 // ca48c1
+0x00000001400089f5 : retf 0xc1f6 // caf6c1
+0x000000014000148d : retf 0xc6eb // caebc6
+0x000000014000668c : retf 0xcccc // cacccc
+0x00000001400023c4 : retf 0xd285 // ca85d2
+0x0000000140006475 : retf 0xe975 // ca75e9
+0x0000000140006673 : retf 0xed75 // ca75ed
+0x0000000140006450 : retf 0xf175 // ca75f1
+0x0000000140004d68 : retf 0xf375 // ca75f3
+0x0000000140005b2d : retf 0xf748 // ca48f7
+0x0000000140004d1e : retf 0xffff // caffff
+0x0000000140006b08 : retf 2 // ca0200
+0x0000000140008c8a : retf 5 // ca0500
+0x0000000140002eb5 : rol bl, 0x48 ; cwde ; mov eax, dword ptr [r9 + rax*8 + 4] ; ret // c0c34898418b44c104c3
+0x0000000140004590 : rol bl, 0x48 ; mov eax, ecx ; ret // c0c3488bc1c3
+0x0000000140008a96 : rol bl, 0x48 ; sbb eax, eax ; sbb rax, -1 ; ret // c0c3481bc04883d8ffc3
+0x0000000140007cd7 : rol byte ptr [rax], 0 ; add al, ch ; nop ; retf 0xffff // c0000000e890caffff
+0x0000000140001487 : rol byte ptr [rax], 1 ; add byte ptr [rax - 0x77], cl ; add al, 0xca ; jmp 0x14000145c // d00000488904caebc6
+0x0000000140007cef : rol byte ptr [rax], 1 ; add byte ptr [rax], al ; call 0x140004776 // d0000000e878caffff
+0x0000000140005db4 : rol byte ptr [rax], 1 ; add byte ptr [rax], al ; test rcx, rcx ; je 0x140005dca ; call rcx // d00000004885c97404ffd1
+0x00000001400017f0 : rol dword ptr [rax + 0x48], 0xf ; ret // c140480fc3
+0x00000001400079f2 : rol dword ptr [rax + 0x4c], 0xf ; ret // c1404c0fc3
+0x0000000140002821 : rol dword ptr [rcx + rcx*4 + 0x7c], cl ; and al, 0x20 ; call rax // d344897c2420ffd0
+0x0000000140002301 : ror byte ptr [rax - 0x75], 1 ; ret 0xe283 // d0488bc283e2
+0x0000000140003b69 : ror byte ptr [rax - 0x75], cl ; retf // d2488bcb
+0x0000000140008a5d : ror byte ptr [rax - 0x7d], 0xd8 ; inc ebx ; xor eax, eax ; ret // c04883d8ffc333c0c3
+0x0000000140007b91 : ror byte ptr [rax - 0x7d], 1 ; jmp 0x1030fc7e0 // d04883e9404c0fc3
+0x0000000140003072 : ror byte ptr [rax - 0x7d], 1 ; ret // d04883c3
+0x0000000140008bff : ror byte ptr [rcx + 0x33], cl ; ret 0x8549 // d24933c24985
+0x0000000140003f68 : ror byte ptr [rdi], 0x84 ; ret 0xfffd // c00f84c2fdff
+0x0000000140006b05 : ror byte ptr [rdi], 0x84 ; retf 2 // c00f84ca0200
+0x0000000140006575 : ror dword ptr [rax - 0x2f], 0xf8 ; dec rax ; ret // c148d1f848ffc8c3
+0x0000000140004585 : ror dword ptr [rax - 0x7d], 0xc1 ; sub byte ptr [rbp + 0x3b], al ; retf // c14883c128453bcb
+0x00000001400030ac : ror dword ptr [rax - 0x7d], 1 ; ret // d14883c3
+0x0000000140008d58 : ror dword ptr [rbx - 0x3b7cb73f], 0x20 ; pop rbp ; ret // c18bc14883c4205dc3
+0x00000001400015be : ror dword ptr [rcx + 0x63], 1 ; ret // d14963c3
+0x0000000140004efd : ror dword ptr [rcx - 0x7d], 0xc3 ; add cl, byte ptr [rax - 1] ; retf // c14983c30248ffcb
+0x0000000140001795 : ror dword ptr [rcx - 1], 0xc8 ; jne 0x140001797 ; ret // c149ffc875f6c3
+0x0000000140007927 : ror dword ptr [rcx - 1], 0xc8 ; jne 0x140007929 ; mov rax, r11 ; ret // c149ffc875f3498bc3c3
+0x0000000140008ae9 : ror dword ptr [rcx - 1], 0xc8 ; jne 0x140008ae9 ; xor rax, rax ; ret // c149ffc875f14833c0c3
+0x00000001400061f9 : sal bh, 0xd8 ; dec eax ; add rsp, 0x28 ; ret // c0f7d8ffc84883c428c3
+0x00000001400063c1 : sal byte ptr [rax + rcx + 0x48], 0x8b ; retf // c07408488bcb
+0x0000000140006080 : sal byte ptr [rax + rdx + 0x48], 0x8b ; retf // c07410488bcb
+0x000000014000647a : sal byte ptr [rbp + 0x10], cl ; mov word ptr [r9], r10w ; call 0x140002ec9 // d2751066458911e83acaffff
+0x0000000140006424 : sal byte ptr [rbp + 0x1d], 0x66 ; mov dword ptr [rcx], r10d ; call 0x140002ec9 // c0751d66448911e890caffff
+0x0000000140006a7f : sal byte ptr [rbp + 0x1f], cl ; call 0x140002ee7 // d2751fe859c4ffff21
+0x0000000140001d39 : sal byte ptr [rbp + 0x24], 0x8d ; push rax ; or byte ptr [rax - 0x75], cl ; retf // c075248d5008488bcb
+0x0000000140007ab6 : sal byte ptr [rbp + 7], 0x49 ; mov eax, ebx ; ret // c07507498bc3c3
+0x0000000140007915 : sal byte ptr [rbp + 8], 0x49 ; mov eax, ebx ; ret // c07508498bc3c3
+0x0000000140006470 : sal byte ptr [rbp + rax + 0x48], 0xff ; retf 0xe975 // c0740548ffca75e9
+0x000000014000666e : sal byte ptr [rbp + rax + 0x48], 0xff ; retf 0xed75 // c0740548ffca75ed
+0x0000000140002600 : sal byte ptr [rbp - 0xe], 0x2b ; retf // c075f22bcb
+0x00000001400038a5 : sal byte ptr [rbx + rsi*2 + 0x4c], 0x8b ; ret // c074734c8bc3
+0x0000000140003aad : sal byte ptr [rdi + rax + 0x48], 0xff ; ret // c0740748ffc3
+0x0000000140001c49 : sal byte ptr [rsi + 0xc], 0xff ; ret 0x8348 // c0760cffc24883
+0x0000000140002fd0 : sal byte ptr [rsp + rax - 0x75], 0xcb ; call rax // c074048bcbffd0
+0x0000000140008a8e : sal byte ptr [rsp + rax - 0x7c], cl ; div byte ptr [rbp - 0x75] ; xor eax, eax ; ret // d2740484f6758b33c0c3
+0x0000000140006577 : sar eax, 1 ; dec rax ; ret // d1f848ffc8c3
+0x000000014000163f : sar edi, 0xff ; jne 0x14000164c ; ret // c1ffff7502f3c3
+0x0000000140006576 : sar rax, 1 ; dec rax ; ret // 48d1f848ffc8c3
+0x0000000140004cec : sbb al, 0x48 ; add esp, 0x28 ; ret // 1c4883c428c3
+0x0000000140008528 : sbb al, 0x48 ; mov ecx, dword ptr [rcx + 0x10] ; call 0x140004777 // 1c488b4910e83ec2ffff
+0x0000000140001c55 : sbb bl, ch ; in eax, 0x8b ; ret 0x348 // 18ebe58bc24803
+0x0000000140003dc5 : sbb byte ptr [rbx], bh ; retf // 183bcb
+0x0000000140003dc4 : sbb byte ptr [rbx], r15b ; retf // 4c183bcb
+0x00000001400076a0 : sbb byte ptr [rcx - 0x75], cl ; jrcxz 0x140007709 ; ret // 18498be35fc3
+0x0000000140007d5b : sbb byte ptr [rcx], al ; add byte ptr [rax], al ; call 0x140004776 // 18010000e80ccaffff
+0x0000000140001e4f : sbb byte ptr [rdi], cl ; add rsp, 0x20 ; pop rbx ; ret // 180f4883c4205bc3
+0x0000000140003dc2 : sbb byte ptr [rdi], cl ; sbb byte ptr [rbx], r15b ; retf // 180f4c183bcb
+0x00000001400022fe : sbb dword ptr [rax + 0x63], ecx ; ror byte ptr [rax - 0x75], 1 ; ret 0xe283 // 194863d0488bc283e2
+0x0000000140008430 : sbb dword ptr [rax], ecx ; add byte ptr [rbp - 0x74f38b25], al ; retf // 19080085db740c8bcb
+0x000000014000842f : sbb dword ptr [rax], r9d ; add byte ptr [rbp - 0x74f38b25], al ; retf // 4419080085db740c8bcb
+0x0000000140008a5f : sbb eax, -1 ; ret // 83d8ffc3
+0x0000000140006426 : sbb eax, 0x11894466 ; call 0x140002ec7 // 1d66448911e890caffff
+0x0000000140006983 : sbb eax, dword ptr [rax] ; add byte ptr [rax - 0x75], cl ; retf // 1b0000488bcb
+0x0000000140003a90 : sbb eax, dword ptr [rbp - 0x75f18b40] ; add ecx, dword ptr [rax - 1] ; ret // 1b85c0740e8a0348ffc3
+0x0000000140008af3 : sbb eax, eax ; sbb eax, -1 ; ret // 1bc083d8ffc3
+0x0000000140008a5c : sbb eax, eax ; sbb rax, -1 ; ret // 1bc04883d8ffc3
+0x00000001400089fa : sbb ecx, dword ptr [rdx + 0x148a4201] ; or dword ptr [rdx], edi ; ret 0x5675 // 1b8a01428a14093ac27556
+0x0000000140008a5e : sbb rax, -1 ; ret // 4883d8ffc3
+0x0000000140008a5b : sbb rax, rax ; sbb rax, -1 ; ret // 481bc04883d8ffc3
+0x0000000140002c64 : scasb al, byte ptr [rdi] ; add byte ptr [rax], al ; ret // ae0000c3
+0x0000000140001710 : sete al ; ret // 0f94c0c3
+0x0000000140004588 : shr dword ptr [rax], 0x45 ; cmp ecx, ebx ; jb 0x14000457a ; xor eax, eax ; ret // c128453bcb72e233c0c3
+0x0000000140008c07 : shr ebx, 0xc ; xor rax, rax ; ret // c1eb0c4833c0c3
+0x0000000140006e40 : stc ; call qword ptr [rbx] // f9ff13
+0x0000000140005b90 : stc ; ret // f9c3
+0x0000000140005a86 : std ; add rsp, 0x40 ; pop rbx ; ret // fd4883c4405bc3
+0x00000001400050b3 : std ; mov eax, ebx ; add rsp, 0x40 ; pop rbx ; ret // fd8bc34883c4405bc3
+0x0000000140005b78 : std ; ret // fdc3
+0x0000000140002d81 : sti ; push qword ptr [rdi + rax - 0x75] ; retf // fbff74078bcb
+0x0000000140005b84 : sti ; ret // fbc3
+0x0000000140005945 : stosd dword ptr [rdi], eax ; ret // abc3
+0x0000000140007c0c : sub al, ch ; pop rsi ; retf // 28e85ecb
+0x00000001400079ef : sub byte ptr [rax - 0x7d], cl ; rol dword ptr [rax + 0x4c], 0xf ; ret // 284883c1404c0fc3
+0x0000000140004589 : sub byte ptr [rbp + 0x3b], al ; retf // 28453bcb
+0x00000001400015f7 : sub byte ptr [rbp - 0x75], cl ; cmp byte ptr [r8 - 0x75], cl ; retf 0x8b49 // 284d8b4138488bca498b
+0x0000000140004f6a : sub byte ptr [rcx - 0x75], cl ; jrcxz 0x140004fd1 ; ret // 28498be35dc3
+0x00000001400016f7 : sub byte ptr [rdi + 0x5b], bl ; ret // 285f5bc3
+0x0000000140005fb8 : sub cl, byte ptr [rax + 0x63] ; retf 0x348 // 2a4863ca4803
+0x0000000140003456 : sub cl, byte ptr [rbp + rcx*4 + 5] ; ret 0x69 // 2a4c8d05c26900
+0x0000000140005d9f : sub eax, 0x48fffffe ; add esp, 0x38 ; ret // 2dfeffff4883c438c3
+0x0000000140003043 : sub eax, 0x8b480000 ; retf // 2d0000488bcb
+0x0000000140006574 : sub eax, ecx ; sar rax, 1 ; dec rax ; ret // 2bc148d1f848ffc8c3
+0x0000000140007c0b : sub r8b, bpl ; pop rsi ; retf // 4b28e85ecb
+0x0000000140006573 : sub rax, rcx ; sar rax, 1 ; dec rax ; ret // 482bc148d1f848ffc8c3
+0x0000000140007cb3 : test al, 0 ; add byte ptr [rax], al ; call 0x140004776 // a8000000e8b4caffff
+0x000000014000448f : test al, 0 ; add byte ptr [rax], al ; ret // a8000000c3
+0x0000000140003a2e : test byte ptr [rax + 0x3675223b], 0x84 ; retf 0x1d75 // f6803b22753684ca751d
+0x000000014000544c : test byte ptr [rax - 0x78], cl ; in al, 0 ; add bh, bh ; ret 0xe2eb // 844888e40000ffc2ebe2
+0x000000014000450a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret // 840000000000c3
+0x0000000140006df4 : test byte ptr [rdi], 0x85 ; retf // f60f85cb
+0x000000014000163d : test cx, 0xffff ; jne 0x14000164e ; ret // 66f7c1ffff7502f3c3
+0x0000000140005b64 : test dh, dh ; jne 0x140005b2a ; lea rax, [rcx + rax - 1] ; ret // 84f675b9488d4401ffc3
+0x0000000140008a91 : test dh, dh ; jne 0x140008a26 ; xor eax, eax ; ret // 84f6758b33c0c3
+0x0000000140008c3d : test dh, dh ; jne 0x140008bd0 ; xor rax, rax ; ret // 84f675884833c0c3
+0x000000014000278c : test dl, bh ; add byte ptr [rax], al ; add byte ptr [rax - 1], cl ; retf // 84fa00000048ffcb
+0x000000014000276d : test dword ptr [rdi + 0x2b000001], edi ; ret // 85bf0100002bc3
+0x0000000140008cca : test eax, 0x4890ffff ; add esp, 0x20 ; pop rbp ; ret // a9ffff904883c4205dc3
+0x0000000140002fcf : test eax, eax ; je 0x140002fdd ; mov ecx, ebx ; call rax // 85c074048bcbffd0
+0x000000014000306d : test eax, eax ; je 0x140003077 ; call rax // 85c07402ffd0
+0x000000014000306d : test eax, eax ; je 0x14000307b ; call rax // 85c07402ffd04883c3
+0x000000014000312e : test eax, eax ; je 0x140003138 ; call rax // 85c07402ffd0
+0x000000014000312e : test eax, eax ; je 0x14000313c ; call rax // 85c07402ffd04883c3
+0x0000000140003fe2 : test eax, eax ; je 0x140003fec ; call rax // 85c07402ffd0
+0x0000000140003fe2 : test eax, eax ; je 0x140003ff0 ; call rax // 85c07402ffd04883c3
+0x000000014000401a : test eax, eax ; je 0x140004024 ; call rax // 85c07402ffd0
+0x000000014000401a : test eax, eax ; je 0x140004028 ; call rax // 85c07402ffd04883c3
+0x000000014000607f : test eax, eax ; je 0x14000609a ; mov rcx, rbx ; call rax // 85c07410488bcbffd0
+0x0000000140006351 : test eax, eax ; je 0x140006390 ; call rsi // 85c07437ffd6
+0x000000014000639f : test eax, eax ; je 0x1400063d0 ; call rax // 85c07429ffd0
+0x00000001400063c0 : test eax, eax ; je 0x1400063d3 ; mov rcx, rbx ; call rax // 85c07408488bcbffd0
+0x0000000140007914 : test eax, eax ; jne 0x140007927 ; mov rax, r11 ; ret // 85c07508498bc3c3
+0x0000000140007ab5 : test eax, eax ; jne 0x140007ac7 ; mov rax, r11 ; ret // 85c07507498bc3c3
+0x000000014000163e : test ecx, 0x275ffff ; ret // f7c1ffff7502f3c3
+0x00000001400030a7 : test ecx, ecx ; je 0x1400030b1 ; call rcx // 85c97402ffd1
+0x00000001400030a7 : test ecx, ecx ; je 0x1400030b5 ; call rcx // 85c97402ffd14883c3
+0x0000000140005db9 : test ecx, ecx ; je 0x140005dc5 ; call rcx // 85c97404ffd1
+0x0000000140006a7e : test edx, edx ; jne 0x140006aa9 ; call 0x140002ee8 // 85d2751fe859c4ffff21
+0x000000014000634c : test esi, esi ; je 0x140006395 ; test rax, rax ; je 0x140006395 ; call rsi // 85f6743c4885c07437ffd6
+0x0000000140007913 : test r8, r8 ; jne 0x140007928 ; mov rax, r11 ; ret // 4d85c07508498bc3c3
+0x0000000140007ab4 : test r8, r8 ; jne 0x140007ac8 ; mov rax, r11 ; ret // 4d85c07507498bc3c3
+0x0000000140002fce : test rax, rax ; je 0x140002fde ; mov ecx, ebx ; call rax // 4885c074048bcbffd0
+0x000000014000306c : test rax, rax ; je 0x140003078 ; call rax // 4885c07402ffd0
+0x000000014000306c : test rax, rax ; je 0x14000307c ; call rax // 4885c07402ffd04883c3
+0x000000014000312d : test rax, rax ; je 0x140003139 ; call rax // 4885c07402ffd0
+0x000000014000312d : test rax, rax ; je 0x14000313d ; call rax // 4885c07402ffd04883c3
+0x0000000140003fe1 : test rax, rax ; je 0x140003fed ; call rax // 4885c07402ffd0
+0x0000000140003fe1 : test rax, rax ; je 0x140003ff1 ; call rax // 4885c07402ffd04883c3
+0x0000000140004019 : test rax, rax ; je 0x140004025 ; call rax // 4885c07402ffd0
+0x0000000140004019 : test rax, rax ; je 0x140004029 ; call rax // 4885c07402ffd04883c3
+0x000000014000607e : test rax, rax ; je 0x14000609b ; mov rcx, rbx ; call rax // 4885c07410488bcbffd0
+0x0000000140006350 : test rax, rax ; je 0x140006391 ; call rsi // 4885c07437ffd6
+0x000000014000639e : test rax, rax ; je 0x1400063d1 ; call rax // 4885c07429ffd0
+0x00000001400063bf : test rax, rax ; je 0x1400063d4 ; mov rcx, rbx ; call rax // 4885c07408488bcbffd0
+0x00000001400030a6 : test rcx, rcx ; je 0x1400030b2 ; call rcx // 4885c97402ffd1
+0x00000001400030a6 : test rcx, rcx ; je 0x1400030b6 ; call rcx // 4885c97402ffd14883c3
+0x0000000140005db8 : test rcx, rcx ; je 0x140005dc6 ; call rcx // 4885c97404ffd1
+0x0000000140006a7d : test rdx, rdx ; jne 0x140006aaa ; call 0x140002ee9 // 4885d2751fe859c4ffff21
+0x000000014000186e : xchg eax, ebp ; ret // 95c3
+0x0000000140001486 : xchg eax, esi ; rol byte ptr [rax], 1 ; add byte ptr [rax - 0x77], cl ; add al, 0xca ; jmp 0x14000145d // 96d00000488904caebc6
+0x0000000140006b49 : xchg eax, esp ; ret // 94c3
+0x0000000140005bb4 : xor al, 0 ; add byte ptr [rax - 0x77], cl ; add ecx, dword ptr [rax - 0x7d] ; ret // 3400004889034883c3
+0x0000000140007c15 : xor al, ch ; push rbp ; retf // 30e855cb
+0x000000014000594c : xor byte ptr [rax + 0x3b], cl ; fdiv dword ptr [rsi + rcx - 0x18] ; popfq ; ret // 30483bd8740ee89dc3
+0x00000001400025ec : xor byte ptr [rax - 0x74b80000], ah ; retf // 30a00000488bcb
+0x0000000140003023 : xor byte ptr [rax], al ; add byte ptr [rax - 0x75], cl ; retf // 300000488bcb
+0x0000000140004e2c : xor byte ptr [rbx - 0x74bbfbba], cl ; retf // 308b4604448bcb
+0x000000014000550e : xor byte ptr [rcx + 0x5d], al ; ret // 30415dc3
+0x0000000140004a08 : xor byte ptr [rcx + 0x5f], al ; pop r13 ; pop r12 ; ret // 30415f415d415cc3
+0x0000000140002daa : xor byte ptr [rcx - 0x75], cl ; jrcxz 0x140002df8 ; pop rsp ; pop rdi ; pop rbp ; ret // 30498be3415c5f5dc3
+0x000000014000278a : xor byte ptr [rdi], cl ; test dl, bh ; add byte ptr [rax], al ; add byte ptr [rax - 1], cl ; retf // 300f84fa00000048ffcb
+0x0000000140001dd4 : xor eax, eax ; add rsp, 0x20 ; pop rbx ; ret // 33c04883c4205bc3
+0x0000000140002f82 : xor eax, eax ; add rsp, 0x28 ; ret // 33c04883c428c3
+0x000000014000337f : xor eax, eax ; ret // 33c0c3
+0x00000001400039a4 : xor ecx, dword ptr [rax - 1] ; ret // 3348ffc3
+0x0000000140008919 : xor ecx, dword ptr [rcx + rdi*4] ; or al, byte ptr [rax] ; add byte ptr [rax], al ; call 0x140004b31 // 330cb90a000000e803c2ffff
+0x0000000140004d1a : xor edx, edx ; call 0x140001734 // 33d2e80fcaffff
+0x000000014000357f : xor esi, dword ptr [rcx + rdx - 1] ; ret 0xff49 // 337411ffc249ff
+0x0000000140007c14 : xor r8b, bpl ; push rbp ; retf // 4b30e855cb
+0x0000000140008aef : xor rax, rax ; ret // 4833c0c3
+
+Unique gadgets found: 1145
