@@ -12,8 +12,8 @@ The challenge's goals were set to:
 
 > TL;DR; Spare me all the boring details, I want to
 >
->* [study the exploit](rsrc/sploit4.py)
 >* [study the decompiled code](rsrc/eko2019.exe.c)
+>* [study the exploit](rsrc/sploit4.py)
 
 ## Initial Dynamic Analysis
 
@@ -205,14 +205,18 @@ overflowable buffer, hence overwritable as well. Great.
 
 By sending a particularly crafted sequence of network packets, we are now given the ability\
 to leak arbitrary data of the server thread's TEB structure. For example, by sending the following\
-packet to the server, gadget number 0x65 will be called with _rcx_ being set to 0x30.
+packet to the server, gadget number 0x65 will be called with _rcx_ set to 0x30.
 
->[0x200*'A'] + ['\x65\x00\x00\x00\x00\x00\x00\x00'] + ['\x30\x00\x00\x00\x00\x00\x00\x00']
+```
+[0x200*'A'] + ['\x65\x00\x00\x00\x00\x00\x00\x00'] + ['\x30\x00\x00\x00\x00\x00\x00\x00']
+```
 
 Sending this packet will overwrite the target thread's following variables on the stack and will\
 cause the server to send us the current thread's TEB address:
 
->[buf] + [gadget_idx] + [p]
+```
+[buf] + [gadget_idx] + [p]
+```
 
 The following screenshot shows the Python implementation of the _leak_teb()_ function used by\
 the exploit code.
@@ -220,8 +224,8 @@ the exploit code.
 ![leak teb](rsrc/leakteb.png?raw=true)
 
 With the process' TEB address leaked to us, we are well prepared for leaking further information\
-by using the default gagdet 62 (0x3e), which dereferences any 64 bits of process memory pointed\
-to by _rcx_:
+by using the default gagdet 62 (0x3e), which dereferences arbitrary 64 bits of process memory pointed\
+to by _rcx_ per request:
 
 ![gadget index](rsrc/gadget_3e.png?raw=true)
 
@@ -229,7 +233,8 @@ In turn, leaking arbitrary memory allows us to
 
 * bypass DEP and ASLR
 * identify the stack cookie's position on the stack
-* locate itself on the stack
+* leak the stack cookie
+* locate ourselves on the stack
 * eventually run an external process
 
 In order to bypass ASLR, the _"ImageBaseAddress"_ of the target executable must be acquired\
@@ -253,7 +258,7 @@ is created by any preceding call to the _printf()_ function.\
 By sending the server a packet that solely consisted of\
 printable characters with a size that would overflow the\
 entire stack frame but stopping right before the stack\
-cookie's position, the call to printf()_ would leak the\
+cookie's position, the call to _printf()_ would leak the\
 stack cookie from the stack into the buffer holding the\
 formatted text whose address had previously been acquired.\
 \
@@ -271,9 +276,9 @@ address to _main()_.
 
 ![leak cookie 2](rsrc/leak_cookie2.png?raw=true)
 
-Relative from there, the cookie that belongs the _handle_client()_ function's stack frame\
+Relative from there, the cookie that belongs to the _handle_client()_ function's stack frame\
 can be addressed and subsequently leaked to our client. Having a copy of the cookie\
-and a copy of the xor key at hand will allow the _rsp_ register to be restored, which can\
+and a copy of the xor key at hand will allow the _rsp_ register to be recovered, which can\
 then be used to build the final ROP chain.
 
 ![restore rsp](rsrc/restore_rsp.png?raw=true)
@@ -293,11 +298,11 @@ return address to _main()_. It loads _"ptr_to_chain"_ at offset 0x228 into the _
 register which effectively lets _rsp_ point into the next gadget at _2.)_.\
 \
 Stack pivoting is a vital step in order to avoid trashing the caller's stack frame.\
-Messing up the caller's frame would risk stable process continuation.
+Messing up the caller's frame would risk stable process continuation
 
 2. This gadget loads the address of a "pop rax" gadget into _r12_ in preparation for\
-the workaround that is required in order to compensate for the return address pushed\
-onto the stack by the _call r12_ instruction in _4.)_.
+a "workaround" that is required in order to compensate for the return address\
+that is pushed onto the stack by the _call r12_ instruction in _4.)_.
 
 3. A pointer to _"buf"_ is loaded into _rax_, which now points to the _"calc\0"_ string
 
@@ -306,15 +311,15 @@ subsequent API call to _WinExec()_ in _5.)_. The call to _r12_ pushes a return a
 on the stack and causes a "pop rax" gadget to be executed which will pop the address\
 off of the stack again
 
-5. This gadget causes the _WinExec() API function to be called
+5. This gadget causes the _WinExec()_ API function to be called
 
-6. The call to _WinExec()_ happens to overwrite some of our ROP chain the stack, hence\
+6. The call to _WinExec()_ happens to overwrite some of our ROP chain on the stack, hence\
 the stack pointer is adjusted by this gadget to skip the data that is "corrupted" by the\
 call to _WinExec()_
 
 7. The original return address to _main()+0x14a_ is loaded into _rax_
 
-8. _rbx_ is loaded with the address of _entry_point_
+8. _rbx_ is loaded with the address of _"entry_point"_
 
 9. The original return address to _main()+0x14a_ is restored by patching _"entry_point"_\
 on the stack -> "mov qword ptr [entry_point], main+0x14a". After that, _rsp_ is adjusted,\
@@ -327,7 +332,7 @@ _"buf"_, in order to return to _main()_ and guarantee process continuation
 
 12. see _10.)_
 
-13. see _13.)_
+13. see _10.)_
 
 See it in action:
 
