@@ -1,12 +1,17 @@
 # Writeup for the BFS Exploitation Challenge 2019
 
+## Table of Contents
+
 - [Writeup for the BFS Exploitation Challenge 2019](#writeup-for-the-bfs-exploitation-challenge-2019)
+  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
+    - [TL;DR](#tldr)
   - [Initial Dynamic Analysis](#initial-dynamic-analysis)
   - [Statically Identifying the Vulnerability](#statically-identifying-the-vulnerability)
   - [Strategy](#strategy)
   - [Preparing the Exploit](#preparing-the-exploit)
   - [Building a ROP Chain](#building-a-rop-chain)
+  - [See Exploit in Action](#see-exploit-in-action)
   - [Contact](#contact)
 
 ## Introduction
@@ -21,11 +26,13 @@ The challenge's goals were set to:
 2. Achieve arbitrary code execution (pop calc or notepad)
 3. Have the exploited process properly continue its execution
 
-> TL;DR; Spare me all the boring details, I want to
+### TL;DR
+
+> Spare me all the boring details, I want to
 >
->* [grab a copy of the challenge](https://static.bluefrostsecurity.de/files/lab/Eko2019_challenge.zip)
->* [study the decompiled code](rsrc/eko2019.exe.c)
->* [study the exploit](rsrc/sploit4.py)
+>- [grab a copy of the challenge](https://static.bluefrostsecurity.de/files/lab/Eko2019_challenge.zip)
+>- [study the decompiled code](rsrc/eko2019.exe.c)
+>- [study the exploit](rsrc/sploit4.py)
 
 ## Initial Dynamic Analysis
 
@@ -116,8 +123,8 @@ If we wanted to verify the decompiler's results or if we refrained from using a 
 because we preferred sharpening or refreshing our assembly comprehension skills instead, we could\
 just as well have a look at the assembler code:
 
-* the _"jle"_ instruction indicates a signed integer comparison
-* the _"movzx eax, word ptr..."_ instruction **mov**es 16 bits of data\
+- the _"jle"_ instruction indicates a signed integer comparison
+- the _"movzx eax, word ptr..."_ instruction **mov**es 16 bits of data\
 from a data source to a 32 bit register _eax_, **z**ero e**x**tending its\
 upper 16 bits.
 
@@ -243,11 +250,11 @@ to by _rcx_ per request:
 
 In turn, leaking arbitrary memory allows us to
 
-* bypass DEP and ASLR
-* identify the stack cookie's position on the stack
-* leak the stack cookie
-* locate ourselves on the stack
-* eventually run an external process
+- bypass DEP and ASLR
+- identify the stack cookie's position on the stack
+- leak the stack cookie
+- locate ourselves on the stack
+- eventually run an external process
 
 In order to bypass ASLR, the _"ImageBaseAddress"_ of the target executable must be acquired\
 from the [Process Environment Block](https://undocumented.ntinternals.net/UserMode/Undocumented%20Functions/NT%20Objects/Process/PEB.html) which is accessible at _gs:[060h]_. This will allow for relative\
@@ -346,7 +353,7 @@ _"buf"_, in order to return to _main()_ and guarantee process continuation
 
 13. see _10.)_
 
-See it in action:
+## See Exploit in Action
 
 ![sploit in action](rsrc/action.gif?raw=true)
 
