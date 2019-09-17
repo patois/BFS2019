@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-- [Writeup for the BFS Exploitation Challenge 2019](#writeup-for-the-bfs-exploitation-challenge-2019)
-  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
     - [TL;DR](#tldr)
   - [Initial Dynamic Analysis](#initial-dynamic-analysis)
@@ -28,11 +26,11 @@ The challenge's goals were set to:
 
 ### TL;DR
 
-> Spare me all the boring details, I want to
->
->- [grab a copy of the challenge](https://static.bluefrostsecurity.de/files/lab/Eko2019_challenge.zip)
->- [study the decompiled code](rsrc/eko2019.exe.c)
->- [study the exploit](rsrc/sploit4.py)
+Spare me all the boring details, I want to
+
+- [grab a copy of the challenge](https://static.bluefrostsecurity.de/files/lab/Eko2019_challenge.zip)
+- [study the decompiled code](rsrc/eko2019.exe.c)
+- [study the exploit](rsrc/sploit4.py)
 
 ## Initial Dynamic Analysis
 
