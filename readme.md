@@ -1,5 +1,16 @@
 # Writeup for the BFS Exploitation Challenge 2019
 
+- [Writeup for the BFS Exploitation Challenge 2019](#writeup-for-the-bfs-exploitation-challenge-2019)
+  - [Introduction](#introduction)
+  - [Initial Dynamic Analysis](#initial-dynamic-analysis)
+  - [Statically Identifying the Vulnerability](#statically-identifying-the-vulnerability)
+  - [Strategy](#strategy)
+  - [Preparing the Exploit](#preparing-the-exploit)
+  - [Building a ROP Chain](#building-a-rop-chain)
+  - [Contact](#contact)
+
+## Introduction
+
 Having enjoyed and succeeded in [solving](https://github.com/patois/FancyVote) a previous BFS Exploitation Challenge from 2017,\
 I've decided to give the [2019 BFS Exploitation Challenge](https://labs.bluefrostsecurity.de/blog/2019/09/07/bfs-ekoparty-2019-exploitation-challenge/) a try. It is a Windows 64 bit executable\
 for which an exploit is expected to work on a Windows 10 Redstone machine.
@@ -12,6 +23,7 @@ The challenge's goals were set to:
 
 > TL;DR; Spare me all the boring details, I want to
 >
+>* [grab a copy of the challenge](https://static.bluefrostsecurity.de/files/lab/Eko2019_challenge.zip)
 >* [study the decompiled code](rsrc/eko2019.exe.c)
 >* [study the exploit](rsrc/sploit4.py)
 
@@ -219,7 +231,7 @@ cause the server to send us the current thread's TEB address:
 ```
 
 The following screenshot shows the Python implementation of the _leak_teb()_ function used by\
-the exploit code.
+the [exploit](rsrc/sploit4.py).
 
 ![leak teb](rsrc/leakteb.png?raw=true)
 
