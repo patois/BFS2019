@@ -354,7 +354,3 @@ _"buf"_, in order to return to _main()_ and guarantee process continuation
 ## See Exploit in Action
 
 ![sploit in action](rsrc/action.gif?raw=true)
-
-## Contact
-
-[Twitter](https://twitter.com/pat0is)
