@@ -1,4 +1,4 @@
-# Writeup for the BFS Exploitation Challenge 2019
+# Writeup on the BFS Exploitation Challenge 2019
 
 ## Table of Contents
 
